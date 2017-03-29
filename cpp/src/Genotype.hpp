@@ -7,343 +7,312 @@
 
 # include "MutationManager.hh"
 
-namespace IndieNeat
-{
-  template <unsigned int numInputs, unsigned int numOutputs>
-    class Genotype
-    {
-      public:
-	enum class 			NodeType
-	{
-	  INPUT,
-	  OUTPUT,
-	  HIDDEN
-	};
+namespace IndieNeat {
 
-	enum class			State
-	{
-	  NOT_EVALUATED,
-	  IN_EVALUATION,
-	  IS_EVALUATED
-	};
+    /*!\brief The Genotype class contains the information about the genome of the artificial neural network.
+     *
+     * Inside the Genotype class we can retrieve each Node and each Gene which contains all the
+     * knowledge of the artificial neural network. We can also retrieve all the path in the evolution
+     * history of the artificial neural network population.
+     * @tparam numInputs Contains how many inputs has the genotype.
+     * @tparam numOutputs Contains how many outputs has the genotype.
+     */
+    template<unsigned int numInputs, unsigned int numOutputs>
+    class Genotype {
 
-	class Node
-	{
-	  public:
-	    Node(unsigned int id, NodeType type, double bias)
-	      : _id(id), _type(type), _bias(bias)
-	    {}
+    public:
+        enum class NodeType {
+            INPUT,
+            OUTPUT,
+            HIDDEN
+        };
 
-	    Node(Node const& copy)
-	      : _id(copy._id), _type(copy._type), _bias(copy._bias)
-	    {}
+        enum class State {
+            NOT_EVALUATED,
+            IN_EVALUATION,
+            IS_EVALUATED
+        };
 
-	    ~Node(void) {}
+        class Node {
+        public:
+            Node(unsigned int id, NodeType type, double bias)
+                    : _id(id), _type(type), _bias(bias) {}
 
-	    Node&	operator=(Node const& copy)
-	    {
-	      if (&copy == this)
-		return (*this);
+            Node(Node const &copy)
+                    : _id(copy._id), _type(copy._type), _bias(copy._bias) {}
 
-	      _id = copy._id;
-	      _type = copy._type;
-	      _bias = copy._bias;
-	      return (*this);
-	    }
+            ~Node(void) {}
 
-	    unsigned int	Id(void) const
-	    {
-	      return (_id);
-	    }
+            Node &operator=(Node const &copy) {
+                if (&copy == this)
+                    return (*this);
 
-	    unsigned int&	Id(void)
-	    {
-	      return (_id);
-	    }
+                _id = copy._id;
+                _type = copy._type;
+                _bias = copy._bias;
+                return (*this);
+            }
 
-	    NodeType	Type(void) const
-	    {
-	      return (_type);
-	    }
+            unsigned int Id(void) const {
+                return (_id);
+            }
 
-	    NodeType&	Type(void)
-	    {
-	      return (_type);
-	    }
+            unsigned int &Id(void) {
+                return (_id);
+            }
 
-	    double	Bias(void) const
-	    {
-	      return (_bias);
-	    }
+            NodeType Type(void) const {
+                return (_type);
+            }
 
-	    double&	Bias(void)
-	    {
-	      return (_bias);
-	    }
+            NodeType &Type(void) {
+                return (_type);
+            }
 
-	  private:
-	    unsigned int	_id;
-	    NodeType		_type;
-	    double		_bias;
-	};
+            double Bias(void) const {
+                return (_bias);
+            }
 
-	class Gene
-	{
-	  public:
-	    Gene(unsigned int input, unsigned int output, long long innov,
-		std::pair<double, double> const& range)
-	      : _in(input), _out(output), _innov(innov), _enabled(true)
-	    {
-	      std::random_device			rd;
-	      std::mt19937				gen(rd());
-	      std::uniform_real_distribution<double>	distrib(range.first, range.second);
+            double &Bias(void) {
+                return (_bias);
+            }
 
-	      _weight = distrib(gen);
-	    }
+        private:
+            unsigned int _id;
+            NodeType _type;
+            double _bias;
+        };
 
-	    Gene(unsigned int input, unsigned int output, long long innov,
-		bool enabled, double weight)
-	      : _in(input), _out(output), _innov(innov), _enabled(enabled),
-	      _weight(weight)
-	    {}
+        /**
+         * The class Gene contains all the information about a gene in the genome.
+         * With this class we can know where the gene is, between which Node. We also
+         * know its innovation number, which is the rank of the gene creation. Finally,
+         * we have the current coefficient of the gene, which is the knowledge contained
+         * inside it.
+         */
+        class Gene {
+        public:
+            Gene(unsigned int input, unsigned int output, long long innov,
+                 std::pair<double, double> const &range)
+                    : _in(input), _out(output), _innov(innov), _enabled(true) {
+                std::random_device rd;
+                std::mt19937 gen(rd());
+                std::uniform_real_distribution<double> distrib(range.first, range.second);
 
-	    Gene(Gene const& copy)
-	      : _in(copy._in), _out(copy._out), _innov(copy._innov), _enabled(copy._enabled), _weight(copy._weight)
-	    {}
+                _weight = distrib(gen);
+            }
 
-	    ~Gene(void) {}
+            Gene(unsigned int input, unsigned int output, long long innov,
+                 bool enabled, double weight)
+                    : _in(input), _out(output), _innov(innov), _enabled(enabled),
+                      _weight(weight) {}
 
-	    Gene&		operator=(Gene const& copy)
-	    {
-	      if (&copy == this)
-		return (*this);
+            Gene(Gene const &copy)
+                    : _in(copy._in), _out(copy._out), _innov(copy._innov), _enabled(copy._enabled),
+                      _weight(copy._weight) {}
 
-	      _in = copy._in;
-	      _out = copy._out;
-	      _innov = copy._innov;
-	      _enabled = copy._enabled;
-	      _weight = copy._weight;
+            ~Gene(void) {}
 
-	      return (*this);
-	    }
+            Gene &operator=(Gene const &copy) {
+                if (&copy == this)
+                    return (*this);
 
-	    void		setWeight(double weight)
-	    {
-	      _weight = weight;
-	    }
+                _in = copy._in;
+                _out = copy._out;
+                _innov = copy._innov;
+                _enabled = copy._enabled;
+                _weight = copy._weight;
 
-	    double	getWeight(void) const
-	    {
-	      return (_weight);
-	    }
+                return (*this);
+            }
 
-	    void		toggleEnabled(void)
-	    {
-	      _enabled = !_enabled;
-	    }
+            void setWeight(double weight) {
+                _weight = weight;
+            }
 
-	    void		setEnabled(bool enabled)
-	    {
-	      _enabled = enabled;
-	    }
+            double getWeight(void) const {
+                return (_weight);
+            }
 
-	    bool		isEnabled(void) const
-	    {
-	      return (_enabled);
-	    }
+            void toggleEnabled(void) {
+                _enabled = !_enabled;
+            }
 
-	    long long	getIno(void) const
-	    {
-	      return (_innov);
-	    }
+            void setEnabled(bool enabled) {
+                _enabled = enabled;
+            }
 
-	    unsigned int	Input(void) const
-	    {
-	      return (_in);
-	    }
+            bool isEnabled(void) const {
+                return (_enabled);
+            }
 
-	    unsigned int	Output(void) const
-	    {
-	      return (_out);
-	    }
+            long long getIno(void) const {
+                return (_innov);
+            }
 
-	  private:
-	    unsigned int	_in;
-	    unsigned int	_out;
-	    long long		_innov;
-	    bool		_enabled;
-	    double		_weight;
-	};
+            unsigned int Input(void) const {
+                return (_in);
+            }
 
-      public:
-	Genotype(void) {}
+            unsigned int Output(void) const {
+                return (_out);
+            }
 
-	Genotype(std::pair<double, double> const& range)
-	  : _numNodes(0), _fitness(0), _state(State::NOT_EVALUATED)
-	{
-	  std::random_device				rd;
-	  std::mt19937					gen(rd());
-	  std::uniform_real_distribution<double>	distrib(range.first, range.second);
-	  long long					innovNumber;
+        private:
+            unsigned int _in;
+            unsigned int _out;
+            long long _innov;
+            bool _enabled;
+            double _weight;
+        };
 
-	  for (unsigned int i = 0; i < numInputs; i++)
-	    _nodes.push_back(new Node(_numNodes++, NodeType::INPUT, distrib(gen)));
+    public:
+        Genotype(void) {}
 
-	  for (unsigned int i = 0; i < numOutputs; i++)
-	    _nodes.push_back(new Node(_numNodes++, NodeType::OUTPUT, distrib(gen)));
+        Genotype(std::pair<double, double> const &range)
+                : _numNodes(0), _fitness(0), _state(State::NOT_EVALUATED) {
+            std::random_device rd;
+            std::mt19937 gen(rd());
+            std::uniform_real_distribution<double> distrib(range.first, range.second);
+            long long innovNumber;
 
-	  for (unsigned int i = 0; i < numInputs; i++)
-	  {
-	    for (unsigned int j = numInputs; j < numInputs + numOutputs; j++)
-	    {
-	      innovNumber = MutationManager::GetInnovationNumber(_nodes[i]->Id(),
-		  _nodes[j]->Id(), MutationManager::MutationType::ADD_CONNECTION);
-	      _genes.push_back(new Gene(_nodes[i]->Id(), _nodes[j]->Id(), innovNumber, range));
-	    }
-	  }
-	}
+            for (unsigned int i = 0; i < numInputs; i++)
+                _nodes.push_back(new Node(_numNodes++, NodeType::INPUT, distrib(gen)));
 
-	Genotype(Genotype const& copy)
-	  : _fitness(copy._fitness), _state(State::NOT_EVALUATED)
-	{
-	  unsigned int	maxId = 0;
+            for (unsigned int i = 0; i < numOutputs; i++)
+                _nodes.push_back(new Node(_numNodes++, NodeType::OUTPUT, distrib(gen)));
 
-	  for (Node *node : copy._nodes)
-	  {
-	    if (node->Id() > maxId)
-	      maxId = node->Id();
-	    _nodes.push_back(new Node(*node));
-	  }
-	  _numNodes = maxId + 1;
+            for (unsigned int i = 0; i < numInputs; i++) {
+                for (unsigned int j = numInputs; j < numInputs + numOutputs; j++) {
+                    innovNumber = MutationManager::GetInnovationNumber(_nodes[i]->Id(),
+                                                                       _nodes[j]->Id(),
+                                                                       MutationManager::MutationType::ADD_CONNECTION);
+                    _genes.push_back(new Gene(_nodes[i]->Id(), _nodes[j]->Id(), innovNumber, range));
+                }
+            }
+        }
 
-	  for (Gene *gene : copy._genes)
-	    _genes.push_back(new Gene(*gene));
-	}
+        Genotype(Genotype const &copy)
+                : _fitness(copy._fitness), _state(State::NOT_EVALUATED) {
+            unsigned int maxId = 0;
 
-	~Genotype(void)
-	{
-	  for (Node *node : _nodes)
-	    delete (node);
-	  for (Gene *gene : _genes)
-	    delete (gene);
-	}
+            for (Node *node : copy._nodes) {
+                if (node->Id() > maxId)
+                    maxId = node->Id();
+                _nodes.push_back(new Node(*node));
+            }
+            _numNodes = maxId + 1;
 
-	Genotype&	operator=(Genotype const& copy)
-	{
-	  unsigned int	maxId = 0;
+            for (Gene *gene : copy._genes)
+                _genes.push_back(new Gene(*gene));
+        }
 
-	  if (&copy == this)
-	    return (*this);
+        ~Genotype(void) {
+            for (Node *node : _nodes)
+                delete (node);
+            for (Gene *gene : _genes)
+                delete (gene);
+        }
 
-	  _state = State::NOT_EVALUATED;
-	  _fitness = copy._fitness;
+        Genotype &operator=(Genotype const &copy) {
+            unsigned int maxId = 0;
 
-	  for (Node *node : _nodes)
-	    delete (node);
-	  _nodes.clear();
+            if (&copy == this)
+                return (*this);
 
-	  for (Gene *gene : _genes)
-	    delete (gene);
-	  _genes.clear();
+            _state = State::NOT_EVALUATED;
+            _fitness = copy._fitness;
 
-	  for (Node *node : copy._nodes)
-	  {
-	    if (node->Id() > maxId)
-	      maxId = node->Id();
-	    _nodes.push_back(new Node(*node));
-	  }
-	  _numNodes = maxId + 1;
+            for (Node *node : _nodes)
+                delete (node);
+            _nodes.clear();
 
-	  for (Gene *gene : copy._genes)
-	    _genes.push_back(new Gene(*gene));
-	  return (*this);
-	}
+            for (Gene *gene : _genes)
+                delete (gene);
+            _genes.clear();
 
-	std::vector<Node *>&	Nodes(void)
-	{
-	  return (_nodes);
-	}
+            for (Node *node : copy._nodes) {
+                if (node->Id() > maxId)
+                    maxId = node->Id();
+                _nodes.push_back(new Node(*node));
+            }
+            _numNodes = maxId + 1;
 
-	std::vector<Gene *>&	Genes(void)
-	{
-	  return (_genes);
-	}
+            for (Gene *gene : copy._genes)
+                _genes.push_back(new Gene(*gene));
+            return (*this);
+        }
 
-	std::vector<Node *> const&	Nodes(void) const
-	{
-	  return (_nodes);
-	}
+        std::vector<Node *> &Nodes(void) {
+            return (_nodes);
+        }
 
-	std::vector<Gene *> const&	Genes(void) const
-	{
-	  return (_genes);
-	}
+        std::vector<Gene *> &Genes(void) {
+            return (_genes);
+        }
 
-	void	getInputs(std::vector<unsigned int>& inputs) const
-	{
-	  for (Node *node : _nodes)
-	  {
-	    if (node->Type() == NodeType::INPUT)
-	      inputs.push_back(node->Id());
-	  }
-	}
+        std::vector<Node *> const &Nodes(void) const {
+            return (_nodes);
+        }
 
-	void	getOutputs(std::vector<unsigned int>& outputs) const
-	{
-	  for (Node *node : _nodes)
-	  {
-	    if (node->Type() == NodeType::OUTPUT)
-	      outputs.push_back(node->Id());
-	  }
-	}
+        std::vector<Gene *> const &Genes(void) const {
+            return (_genes);
+        }
 
-	Node	*addNode(NodeType type, std::pair<double, double> const& range)
-	{
-	  std::random_device				rd;
-	  std::mt19937					gen(rd());
-	  std::uniform_real_distribution<double>	distrib(range.first, range.second);
+        void getInputs(std::vector<unsigned int> &inputs) const {
+            for (Node *node : _nodes) {
+                if (node->Type() == NodeType::INPUT)
+                    inputs.push_back(node->Id());
+            }
+        }
 
-	  Node	*node = new Node(_numNodes++, type, distrib(gen));
-	  _nodes.push_back(node);
-	  return (node);
-	}
+        void getOutputs(std::vector<unsigned int> &outputs) const {
+            for (Node *node : _nodes) {
+                if (node->Type() == NodeType::OUTPUT)
+                    outputs.push_back(node->Id());
+            }
+        }
 
-	void	setFitness(double fitness)
-	{
-	  _fitness = fitness;
-	}
+        Node *addNode(NodeType type, std::pair<double, double> const &range) {
+            std::random_device rd;
+            std::mt19937 gen(rd());
+            std::uniform_real_distribution<double> distrib(range.first, range.second);
 
-	double	getFitness(void) const
-	{
-	  return (_fitness);
-	}
+            Node *node = new Node(_numNodes++, type, distrib(gen));
+            _nodes.push_back(node);
+            return (node);
+        }
 
-	void	setState(State state)
-	{
-	  _state = state;
-	}
+        void setFitness(double fitness) {
+            _fitness = fitness;
+        }
 
-	State	getState(void) const
-	{
-	  return (_state);
-	}
+        double getFitness(void) const {
+            return (_fitness);
+        }
 
-	long long		getNumNodes(void) const
-	{
-	  return (_numNodes);
-	}
+        void setState(State state) {
+            _state = state;
+        }
 
-	void  setNumNodes(long long num)
-	{
-	  _numNodes = num;
-	}
+        State getState(void) const {
+            return (_state);
+        }
 
-      private:
-	long long		_numNodes;
-	double			_fitness;
-	State			_state;
-	std::vector<Node *>	_nodes;
-	std::vector<Gene *>	_genes;
+        long long getNumNodes(void) const {
+            return (_numNodes);
+        }
+
+        void setNumNodes(long long num) {
+            _numNodes = num;
+        }
+
+    private:
+        long long _numNodes;
+        double _fitness;
+        State _state;
+        std::vector<Node *> _nodes;
+        std::vector<Gene *> _genes;
     };
 }
 

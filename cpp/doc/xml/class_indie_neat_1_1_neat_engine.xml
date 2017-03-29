@@ -1,0 +1,958 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_neat_engine" kind="class" language="C++" prot="public">
+    <compoundname>IndieNeat::NeatEngine</compoundname>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>numInputs</declname>
+        <defname>numInputs</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>numOutputs</declname>
+        <defname>numOutputs</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_neat_engine_1a05d6bd2fdbaf5b65df6c3933f7c9c74c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::_initialized</definition>
+        <argsstring></argsstring>
+        <name>_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="308" column="1" bodyfile="src/NeatEngine.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_neat_engine_1a5a1643df59806be37e639417a9e5b2bb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_indie_neat_1_1_population" kindref="compound">Population</ref>&lt; numInputs, numOutputs &gt;</type>
+        <definition>Population&lt;numInputs, numOutputs&gt; IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::_population</definition>
+        <argsstring></argsstring>
+        <name>_population</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="309" column="1" bodyfile="src/NeatEngine.hpp" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_neat_engine_1a761786f9323dc8f84fdacaf712c2248d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_indie_neat_1_1_mutator" kindref="compound">Mutator</ref>&lt; numInputs, numOutputs &gt;::Settings</type>
+        <definition>Mutator&lt;numInputs, numOutputs&gt;::Settings IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::_mutatorSettings</definition>
+        <argsstring></argsstring>
+        <name>_mutatorSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="310" column="1" bodyfile="src/NeatEngine.hpp" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_neat_engine_1a4b7e0c58fa15646c730b0360597b43c5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_indie_neat_1_1_operator" kindref="compound">Operator</ref>&lt; numInputs, numOutputs &gt;::Settings</type>
+        <definition>Operator&lt;numInputs, numOutputs&gt;::Settings IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::_operatorSettings</definition>
+        <argsstring></argsstring>
+        <name>_operatorSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="311" column="1" bodyfile="src/NeatEngine.hpp" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_neat_engine_1a14439b92f87fdfd021df92a065c785ad" prot="private" static="no" mutable="no">
+        <type><ref refid="class_indie_neat_1_1_population" kindref="compound">Population</ref>&lt; numInputs, numOutputs &gt;::Settings</type>
+        <definition>Population&lt;numInputs, numOutputs&gt;::Settings IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::_popSettings</definition>
+        <argsstring></argsstring>
+        <name>_popSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="312" column="1" bodyfile="src/NeatEngine.hpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1ad26364085ea48e994e86f34b8a5d24e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::NeatEngine</definition>
+        <argsstring>(void)</argsstring>
+        <name>NeatEngine</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="17" column="1" bodyfile="src/NeatEngine.hpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a3e7472221322de0dea394704338232a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::~NeatEngine</definition>
+        <argsstring>(void)</argsstring>
+        <name>~NeatEngine</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="21" column="1" bodyfile="src/NeatEngine.hpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a5d76888dd3cea3a462af394483f1cc6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::init</definition>
+        <argsstring>(void)</argsstring>
+        <name>init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="26" column="1" bodyfile="src/NeatEngine.hpp" bodystart="26" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1abd2f03a971452369f1bfe12898911ce8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::evaluate</definition>
+        <argsstring>(std::vector&lt; typename Population&lt; numInputs, numOutputs &gt;::GenomeContainer *&gt; &amp;buffer, unsigned int numberOfGenomes)</argsstring>
+        <name>evaluate</name>
+        <param>
+          <type>std::vector&lt; typename <ref refid="class_indie_neat_1_1_population" kindref="compound">Population</ref>&lt; numInputs, numOutputs &gt;::GenomeContainer *&gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>numberOfGenomes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="34" column="1" bodyfile="src/NeatEngine.hpp" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a76332206d1a2a5bc57142f4175bee100" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::pushScore</definition>
+        <argsstring>(std::vector&lt; typename Population&lt; numInputs, numOutputs &gt;::GenomeScore *&gt; const &amp;scores)</argsstring>
+        <name>pushScore</name>
+        <param>
+          <type>std::vector&lt; typename <ref refid="class_indie_neat_1_1_population" kindref="compound">Population</ref>&lt; numInputs, numOutputs &gt;::GenomeScore *&gt; const &amp;</type>
+          <declname>scores</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="42" column="1" bodyfile="src/NeatEngine.hpp" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a34cb78a2be59c9d8a35b0abe2cf4910d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getBestFitness</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getBestFitness</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="49" column="1" bodyfile="src/NeatEngine.hpp" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a3b75e3f1146a21e017dfc06d9bfd0d42" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; const  &amp;</type>
+        <definition>Genotype&lt;numInputs, numOutputs&gt; const&amp; IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getBestGenome</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getBestGenome</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="56" column="1" bodyfile="src/NeatEngine.hpp" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a9e61d72e52fbffca74e52ab84d99b4cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setPopulationSize</definition>
+        <argsstring>(unsigned int size)</argsstring>
+        <name>setPopulationSize</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="63" column="1" bodyfile="src/NeatEngine.hpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a7f50069ece57d11e8f3f281c3f455c0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setDistanceThreshold</definition>
+        <argsstring>(double threshold)</argsstring>
+        <name>setDistanceThreshold</name>
+        <param>
+          <type>double</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="68" column="1" bodyfile="src/NeatEngine.hpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1aa6432f4ed608efa054fdb7294a6d2854" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setMaxStagnantGeneration</definition>
+        <argsstring>(unsigned int number)</argsstring>
+        <name>setMaxStagnantGeneration</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="73" column="1" bodyfile="src/NeatEngine.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1aff67e5c00a7bbe4bb7eeeb1e99dd4115" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setOffspringsRate</definition>
+        <argsstring>(double rate)</argsstring>
+        <name>setOffspringsRate</name>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="78" column="1" bodyfile="src/NeatEngine.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a02be0b783551b649882aff2ffa5823fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setWeightMutationProbability</definition>
+        <argsstring>(double rate)</argsstring>
+        <name>setWeightMutationProbability</name>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="83" column="1" bodyfile="src/NeatEngine.hpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a68f7f595180a3d663263209fd80123e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setInterSpeciesMatingRate</definition>
+        <argsstring>(double rate)</argsstring>
+        <name>setInterSpeciesMatingRate</name>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="88" column="1" bodyfile="src/NeatEngine.hpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1ade9503fe02b49925dd50ecb1c3acec3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setSpeciesKeepingRate</definition>
+        <argsstring>(double rate)</argsstring>
+        <name>setSpeciesKeepingRate</name>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="93" column="1" bodyfile="src/NeatEngine.hpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a60dda8952c92be48a6c8e3f3ec6648d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setDefaultSpeciesPoolSize</definition>
+        <argsstring>(unsigned int size)</argsstring>
+        <name>setDefaultSpeciesPoolSize</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="98" column="1" bodyfile="src/NeatEngine.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a7236c7c66a428cf33a2e63a79b843b64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setDefaultWeightRange</definition>
+        <argsstring>(std::pair&lt; double, double &gt; const &amp;range)</argsstring>
+        <name>setDefaultWeightRange</name>
+        <param>
+          <type>std::pair&lt; double, double &gt; const &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="103" column="1" bodyfile="src/NeatEngine.hpp" bodystart="103" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a4bab2c61316334e721f216a9d45608a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setDefaultPerturbationRange</definition>
+        <argsstring>(std::pair&lt; double, double &gt; const &amp;range)</argsstring>
+        <name>setDefaultPerturbationRange</name>
+        <param>
+          <type>std::pair&lt; double, double &gt; const &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="110" column="1" bodyfile="src/NeatEngine.hpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a4c507ac8284824d7c5ccfbecca0b1e98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setExpectedFitness</definition>
+        <argsstring>(double expected)</argsstring>
+        <name>setExpectedFitness</name>
+        <param>
+          <type>double</type>
+          <declname>expected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="115" column="1" bodyfile="src/NeatEngine.hpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a7aa454beb8823264adeae2656b335b20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setMaximumGeneration</definition>
+        <argsstring>(unsigned int size)</argsstring>
+        <name>setMaximumGeneration</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="120" column="1" bodyfile="src/NeatEngine.hpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a9cb2269c8fff209a617c1d4ec837651a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setRandomWeightProbability</definition>
+        <argsstring>(double prob)</argsstring>
+        <name>setRandomWeightProbability</name>
+        <param>
+          <type>double</type>
+          <declname>prob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="125" column="1" bodyfile="src/NeatEngine.hpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1adb60239f711d8d071a7d673684a890d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setAddConnectionProbability</definition>
+        <argsstring>(double prob)</argsstring>
+        <name>setAddConnectionProbability</name>
+        <param>
+          <type>double</type>
+          <declname>prob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="130" column="1" bodyfile="src/NeatEngine.hpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a33e833e45e4f5a8214fc859f011ad8f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setAddNeuronProbability</definition>
+        <argsstring>(double prob)</argsstring>
+        <name>setAddNeuronProbability</name>
+        <param>
+          <type>double</type>
+          <declname>prob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="135" column="1" bodyfile="src/NeatEngine.hpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a76065c599b1d02d8dab89285f145dfc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setExcessCoefficient</definition>
+        <argsstring>(double coef)</argsstring>
+        <name>setExcessCoefficient</name>
+        <param>
+          <type>double</type>
+          <declname>coef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="140" column="1" bodyfile="src/NeatEngine.hpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1af4df98655136f5aeb4fad1099ac723be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setDisjointCoefficient</definition>
+        <argsstring>(double coef)</argsstring>
+        <name>setDisjointCoefficient</name>
+        <param>
+          <type>double</type>
+          <declname>coef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="145" column="1" bodyfile="src/NeatEngine.hpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a3d32d44a1785f5ee6f12037221370281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::setWeightAverageCoefficient</definition>
+        <argsstring>(double coef)</argsstring>
+        <name>setWeightAverageCoefficient</name>
+        <param>
+          <type>double</type>
+          <declname>coef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="150" column="1" bodyfile="src/NeatEngine.hpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1aa26d6e65f052cac7c8b5d2372af20ec3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getPopulationSize</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getPopulationSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="155" column="1" bodyfile="src/NeatEngine.hpp" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1ac77e196e0572c01b2b8d916a6559526a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getDistanceThreshold</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getDistanceThreshold</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="160" column="1" bodyfile="src/NeatEngine.hpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1abc5e25d6aef01cf8b3e91b2a4de00264" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getMaxStagnantGeneration</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getMaxStagnantGeneration</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="165" column="1" bodyfile="src/NeatEngine.hpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a5264ee8f3af5921c2c8273e11423ea8a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getWeightMutationProbability</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getWeightMutationProbability</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="170" column="1" bodyfile="src/NeatEngine.hpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a562a94a8fbe32faf3b320c6ec4ea0109" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getOffspringsRate</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getOffspringsRate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="175" column="1" bodyfile="src/NeatEngine.hpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1affaf6d625464486cdadc03acb63ef5ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getInterSpeciesMatingRate</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getInterSpeciesMatingRate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="180" column="1" bodyfile="src/NeatEngine.hpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1ad0eff468394c3d6d676f24763592abcf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getSpeciesKeepingRate</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getSpeciesKeepingRate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="185" column="1" bodyfile="src/NeatEngine.hpp" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a043fe1693e0eec6a96409991fd23082d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getDefaultSpeciesPoolSize</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getDefaultSpeciesPoolSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="190" column="1" bodyfile="src/NeatEngine.hpp" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a1d489dde2a8d01336f54d0863b295ebe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; double, double &gt; const  &amp;</type>
+        <definition>std::pair&lt;double, double&gt; const&amp; IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getDefaultWeightRange</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getDefaultWeightRange</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="195" column="1" bodyfile="src/NeatEngine.hpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a1e7b1007365ba9478934f288fc001bd7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; double, double &gt; const  &amp;</type>
+        <definition>std::pair&lt;double, double&gt; const&amp; IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getDefaultPerturbationRange</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getDefaultPerturbationRange</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="200" column="1" bodyfile="src/NeatEngine.hpp" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a826d58f8d3ba3f2527545969b4817e0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getExpectedFitness</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getExpectedFitness</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="205" column="1" bodyfile="src/NeatEngine.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1abbaa7a50a64d1b0a511242fd9b16397b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getMaximumGeneration</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getMaximumGeneration</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="210" column="1" bodyfile="src/NeatEngine.hpp" bodystart="210" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1ac52ab533bf06e49e6881d3f3be35f7ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getRandomWeightProbability</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getRandomWeightProbability</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="215" column="1" bodyfile="src/NeatEngine.hpp" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1ac9ad37b6bbad3b65c6cf925d01b7a45e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getAddConnectionProbability</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getAddConnectionProbability</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="220" column="1" bodyfile="src/NeatEngine.hpp" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1af1fb8dbe2831bcde60a290d53a623dd7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getAddNeuronProbability</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getAddNeuronProbability</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="225" column="1" bodyfile="src/NeatEngine.hpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1af04e63309d1fd3288a1858b2332353d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getExcessCoefficient</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getExcessCoefficient</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="230" column="1" bodyfile="src/NeatEngine.hpp" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a28823e1f447e4a4da95f623272f00be2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getDisjointCoefficient</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getDisjointCoefficient</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="235" column="1" bodyfile="src/NeatEngine.hpp" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1af9199d878606632526eb7a6855bb3639" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::getWeightAverageCoefficient</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getWeightAverageCoefficient</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="240" column="1" bodyfile="src/NeatEngine.hpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a44132cde1d44edd870780c05eba29ba1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::isEvolving</definition>
+        <argsstring>(void) const</argsstring>
+        <name>isEvolving</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="245" column="1" bodyfile="src/NeatEngine.hpp" bodystart="245" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a72379a072d593db037c67badce123324" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::isFinished</definition>
+        <argsstring>(void) const</argsstring>
+        <name>isFinished</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="252" column="1" bodyfile="src/NeatEngine.hpp" bodystart="252" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1aa806823e65622236d926d3787efa0b32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::save</definition>
+        <argsstring>(std::string const &amp;directory) const</argsstring>
+        <name>save</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>directory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="259" column="1" bodyfile="src/NeatEngine.hpp" bodystart="259" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1a7f866b4bd2279a1d3b89b450e45b6d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::load</definition>
+        <argsstring>(std::string const &amp;directory)</argsstring>
+        <name>load</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>directory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="265" column="1" bodyfile="src/NeatEngine.hpp" bodystart="265" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1af0bcb45cfa2e9576c5fbd58618267450" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::saveParameters</definition>
+        <argsstring>(void)</argsstring>
+        <name>saveParameters</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="276" column="1" bodyfile="src/NeatEngine.hpp" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_1ae44c81e06890ebce798f33c82bf6b2ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IndieNeat::NeatEngine&lt; numInputs, numOutputs &gt;::loadParameters</definition>
+        <argsstring>(void)</argsstring>
+        <name>loadParameters</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngine.hpp" line="281" column="1" bodyfile="src/NeatEngine.hpp" bodystart="281" bodyend="305"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/NeatEngine.hpp" line="15" column="1" bodyfile="src/NeatEngine.hpp" bodystart="14" bodyend="313"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_neat_engine_1a05d6bd2fdbaf5b65df6c3933f7c9c74c" prot="private" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>_initialized</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a761786f9323dc8f84fdacaf712c2248d" prot="private" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>_mutatorSettings</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a4b7e0c58fa15646c730b0360597b43c5" prot="private" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>_operatorSettings</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a14439b92f87fdfd021df92a065c785ad" prot="private" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>_popSettings</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a5a1643df59806be37e639417a9e5b2bb" prot="private" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>_population</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1abd2f03a971452369f1bfe12898911ce8" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>evaluate</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1ac9ad37b6bbad3b65c6cf925d01b7a45e" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getAddConnectionProbability</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1af1fb8dbe2831bcde60a290d53a623dd7" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getAddNeuronProbability</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a34cb78a2be59c9d8a35b0abe2cf4910d" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getBestFitness</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a3b75e3f1146a21e017dfc06d9bfd0d42" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getBestGenome</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a1e7b1007365ba9478934f288fc001bd7" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getDefaultPerturbationRange</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a043fe1693e0eec6a96409991fd23082d" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getDefaultSpeciesPoolSize</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a1d489dde2a8d01336f54d0863b295ebe" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getDefaultWeightRange</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a28823e1f447e4a4da95f623272f00be2" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getDisjointCoefficient</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1ac77e196e0572c01b2b8d916a6559526a" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getDistanceThreshold</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1af04e63309d1fd3288a1858b2332353d6" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getExcessCoefficient</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a826d58f8d3ba3f2527545969b4817e0e" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getExpectedFitness</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1affaf6d625464486cdadc03acb63ef5ff" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getInterSpeciesMatingRate</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1abbaa7a50a64d1b0a511242fd9b16397b" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getMaximumGeneration</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1abc5e25d6aef01cf8b3e91b2a4de00264" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getMaxStagnantGeneration</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a562a94a8fbe32faf3b320c6ec4ea0109" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getOffspringsRate</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1aa26d6e65f052cac7c8b5d2372af20ec3" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getPopulationSize</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1ac52ab533bf06e49e6881d3f3be35f7ad" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getRandomWeightProbability</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1ad0eff468394c3d6d676f24763592abcf" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getSpeciesKeepingRate</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1af9199d878606632526eb7a6855bb3639" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getWeightAverageCoefficient</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a5264ee8f3af5921c2c8273e11423ea8a" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>getWeightMutationProbability</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a5d76888dd3cea3a462af394483f1cc6e" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>init</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a44132cde1d44edd870780c05eba29ba1" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>isEvolving</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a72379a072d593db037c67badce123324" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>isFinished</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a7f866b4bd2279a1d3b89b450e45b6d6e" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>load</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1ae44c81e06890ebce798f33c82bf6b2ee" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>loadParameters</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1ad26364085ea48e994e86f34b8a5d24e5" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>NeatEngine</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a76332206d1a2a5bc57142f4175bee100" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>pushScore</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1aa806823e65622236d926d3787efa0b32" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>save</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1af0bcb45cfa2e9576c5fbd58618267450" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>saveParameters</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1adb60239f711d8d071a7d673684a890d9" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setAddConnectionProbability</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a33e833e45e4f5a8214fc859f011ad8f1" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setAddNeuronProbability</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a4bab2c61316334e721f216a9d45608a2" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setDefaultPerturbationRange</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a60dda8952c92be48a6c8e3f3ec6648d1" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setDefaultSpeciesPoolSize</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a7236c7c66a428cf33a2e63a79b843b64" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setDefaultWeightRange</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1af4df98655136f5aeb4fad1099ac723be" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setDisjointCoefficient</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a7f50069ece57d11e8f3f281c3f455c0e" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setDistanceThreshold</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a76065c599b1d02d8dab89285f145dfc3" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setExcessCoefficient</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a4c507ac8284824d7c5ccfbecca0b1e98" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setExpectedFitness</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a68f7f595180a3d663263209fd80123e1" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setInterSpeciesMatingRate</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a7aa454beb8823264adeae2656b335b20" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setMaximumGeneration</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1aa6432f4ed608efa054fdb7294a6d2854" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setMaxStagnantGeneration</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1aff67e5c00a7bbe4bb7eeeb1e99dd4115" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setOffspringsRate</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a9e61d72e52fbffca74e52ab84d99b4cb" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setPopulationSize</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a9cb2269c8fff209a617c1d4ec837651a" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setRandomWeightProbability</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1ade9503fe02b49925dd50ecb1c3acec3e" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setSpeciesKeepingRate</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a3d32d44a1785f5ee6f12037221370281" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setWeightAverageCoefficient</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a02be0b783551b649882aff2ffa5823fb" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>setWeightMutationProbability</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_1a3e7472221322de0dea394704338232a9" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngine</scope><name>~NeatEngine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

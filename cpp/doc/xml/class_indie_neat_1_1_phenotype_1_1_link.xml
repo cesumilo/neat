@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_phenotype_1_1_link" kind="class" language="C++" prot="private">
+    <compoundname>IndieNeat::Phenotype::Link</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_phenotype_1_1_link_1af29dd638b02577c8913079857a72ce98" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Link::_weight</definition>
+        <argsstring></argsstring>
+        <name>_weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="47" column="1" bodyfile="src/Phenotype.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_phenotype_1_1_link_1ad5ae5f71da83a30e9cc0f48969e62aef" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Link::_used</definition>
+        <argsstring></argsstring>
+        <name>_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="48" column="1" bodyfile="src/Phenotype.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1_1_link_1a896dc4f684eabe37fcf1def9b4edc7a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Link::Link</definition>
+        <argsstring>(double weight)</argsstring>
+        <name>Link</name>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="28" column="1" bodyfile="src/Phenotype.hpp" bodystart="28" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1_1_link_1ab03fcc24a5f3fcb4215c008173eb2c04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Link::~Link</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Link</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="31" column="1" bodyfile="src/Phenotype.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1_1_link_1af8c688183ca61b5ff4e4899c256ae8b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Link::Weight</definition>
+        <argsstring>(void)</argsstring>
+        <name>Weight</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="33" column="1" bodyfile="src/Phenotype.hpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1_1_link_1aa7c09c9d9a191972a2046e09995d207a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool &amp;</type>
+        <definition>bool&amp; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Link::isUsed</definition>
+        <argsstring>(void)</argsstring>
+        <name>isUsed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="37" column="1" bodyfile="src/Phenotype.hpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1_1_link_1a43fc823b2fffb30e76041ee53fe6dc8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Link::Link</definition>
+        <argsstring>(Link const &amp;)</argsstring>
+        <name>Link</name>
+        <param>
+          <type>Link const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1_1_link_1aa3fd1d43eeb4ad0da96188fb44f83727" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Link &amp;</type>
+        <definition>Link&amp; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Link::operator=</definition>
+        <argsstring>(Link const &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>Link const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Phenotype.hpp" line="26" column="1" bodyfile="src/Phenotype.hpp" bodystart="26" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_phenotype_1_1_link_1ad5ae5f71da83a30e9cc0f48969e62aef" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype::Link</scope><name>_used</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1_1_link_1af29dd638b02577c8913079857a72ce98" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype::Link</scope><name>_weight</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1_1_link_1aa7c09c9d9a191972a2046e09995d207a" prot="public" virt="non-virtual"><scope>IndieNeat::Phenotype::Link</scope><name>isUsed</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1_1_link_1a896dc4f684eabe37fcf1def9b4edc7a7" prot="public" virt="non-virtual"><scope>IndieNeat::Phenotype::Link</scope><name>Link</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1_1_link_1a43fc823b2fffb30e76041ee53fe6dc8d" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype::Link</scope><name>Link</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1_1_link_1aa3fd1d43eeb4ad0da96188fb44f83727" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype::Link</scope><name>operator=</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1_1_link_1af8c688183ca61b5ff4e4899c256ae8b4" prot="public" virt="non-virtual"><scope>IndieNeat::Phenotype::Link</scope><name>Weight</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1_1_link_1ab03fcc24a5f3fcb4215c008173eb2c04" prot="public" virt="non-virtual"><scope>IndieNeat::Phenotype::Link</scope><name>~Link</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

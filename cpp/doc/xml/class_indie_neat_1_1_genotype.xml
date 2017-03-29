@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_genotype" kind="class" language="C++" prot="public">
+    <compoundname>IndieNeat::Genotype</compoundname>
+    <includes refid="_genotype_8hpp" local="no">Genotype.hpp</includes>
+    <innerclass refid="class_indie_neat_1_1_genotype_1_1_gene" prot="public">IndieNeat::Genotype::Gene</innerclass>
+    <innerclass refid="class_indie_neat_1_1_genotype_1_1_node" prot="public">IndieNeat::Genotype::Node</innerclass>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>numInputs</declname>
+        <defname>numInputs</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>numOutputs</declname>
+        <defname>numOutputs</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_indie_neat_1_1_genotype_1a3c565c5d61ead686f245d585ddfa2507" prot="public" static="no">
+        <name>NodeType</name>
+        <enumvalue id="class_indie_neat_1_1_genotype_1a3c565c5d61ead686f245d585ddfa2507aa84cc046d48610b05c21fd3670d0c829" prot="public">
+          <name>INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_indie_neat_1_1_genotype_1a3c565c5d61ead686f245d585ddfa2507a50a87f0d71f7221582dad4bf507a0f34" prot="public">
+          <name>OUTPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_indie_neat_1_1_genotype_1a3c565c5d61ead686f245d585ddfa2507a347e628a8f72626a0611ef842fe9d304" prot="public">
+          <name>HIDDEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="24" column="1" bodyfile="src/Genotype.hpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_indie_neat_1_1_genotype_1a2e76da677f35a309198db3465cbf6561" prot="public" static="no">
+        <name>State</name>
+        <enumvalue id="class_indie_neat_1_1_genotype_1a2e76da677f35a309198db3465cbf6561a733af5c3c230462e0aaeea2c5a754a51" prot="public">
+          <name>NOT_EVALUATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_indie_neat_1_1_genotype_1a2e76da677f35a309198db3465cbf6561ac7cac010d1365d384fdfcdec468ab956" prot="public">
+          <name>IN_EVALUATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_indie_neat_1_1_genotype_1a2e76da677f35a309198db3465cbf6561a4e7a08b6a2c75f4fe6b8f9294e28ff83" prot="public">
+          <name>IS_EVALUATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="30" column="1" bodyfile="src/Genotype.hpp" bodystart="30" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_genotype_1aa3b39d4a6f48f9d62195740b4bb2e06a" prot="private" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::_numNodes</definition>
+        <argsstring></argsstring>
+        <name>_numNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="311" column="1" bodyfile="src/Genotype.hpp" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_genotype_1ab29ab333e973d811dba9a9860ee888a2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::_fitness</definition>
+        <argsstring></argsstring>
+        <name>_fitness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="312" column="1" bodyfile="src/Genotype.hpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_genotype_1a0a9691fbe30bcf91b6d1b55885fa7753" prot="private" static="no" mutable="no">
+        <type>State</type>
+        <definition>State IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::_state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="313" column="1" bodyfile="src/Genotype.hpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_genotype_1a5de291d503e236f404fe4193219df7e0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype_1_1_node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::vector&lt;Node *&gt; IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::_nodes</definition>
+        <argsstring></argsstring>
+        <name>_nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="314" column="1" bodyfile="src/Genotype.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_genotype_1aa72c3dd5c60ef957639067fa3736430b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype_1_1_gene" kindref="compound">Gene</ref> * &gt;</type>
+        <definition>std::vector&lt;Gene *&gt; IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::_genes</definition>
+        <argsstring></argsstring>
+        <name>_genes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="315" column="1" bodyfile="src/Genotype.hpp" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1af998bd394c21db8cfb6b0efa58fe2a99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::Genotype</definition>
+        <argsstring>(void)</argsstring>
+        <name>Genotype</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="170" column="1" bodyfile="src/Genotype.hpp" bodystart="170" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1ae0580322e5095a549a514af6986e92ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::Genotype</definition>
+        <argsstring>(std::pair&lt; double, double &gt; const &amp;range)</argsstring>
+        <name>Genotype</name>
+        <param>
+          <type>std::pair&lt; double, double &gt; const &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="172" column="1" bodyfile="src/Genotype.hpp" bodystart="172" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a61b75e0ad6ab03232cda13ab7de78c79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::Genotype</definition>
+        <argsstring>(Genotype const &amp;copy)</argsstring>
+        <name>Genotype</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="195" column="1" bodyfile="src/Genotype.hpp" bodystart="195" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a424b1ab5ca08aa5544d6fe61a0fcf945" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::~Genotype</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Genotype</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="210" column="1" bodyfile="src/Genotype.hpp" bodystart="210" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1afaac0a604631f5d52c5a3d2d9ba737b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref> &amp;</type>
+        <definition>Genotype&amp; IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::operator=</definition>
+        <argsstring>(Genotype const &amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="217" column="1" bodyfile="src/Genotype.hpp" bodystart="217" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a660be7d08066d8a4d4dbd98fc90d9e64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype_1_1_node" kindref="compound">Node</ref> * &gt; &amp;</type>
+        <definition>std::vector&lt;Node *&gt;&amp; IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::Nodes</definition>
+        <argsstring>(void)</argsstring>
+        <name>Nodes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="246" column="1" bodyfile="src/Genotype.hpp" bodystart="246" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a5e07223bea57cce159a4856b0f1d4be9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype_1_1_gene" kindref="compound">Gene</ref> * &gt; &amp;</type>
+        <definition>std::vector&lt;Gene *&gt;&amp; IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::Genes</definition>
+        <argsstring>(void)</argsstring>
+        <name>Genes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="250" column="1" bodyfile="src/Genotype.hpp" bodystart="250" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a21689d356b3e334dcc748b303537a7c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype_1_1_node" kindref="compound">Node</ref> * &gt; const  &amp;</type>
+        <definition>std::vector&lt;Node *&gt; const&amp; IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::Nodes</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Nodes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="254" column="1" bodyfile="src/Genotype.hpp" bodystart="254" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a27509878844ce83fde93f94c62f031b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype_1_1_gene" kindref="compound">Gene</ref> * &gt; const  &amp;</type>
+        <definition>std::vector&lt;Gene *&gt; const&amp; IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::Genes</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Genes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="258" column="1" bodyfile="src/Genotype.hpp" bodystart="258" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a177c51e16af584e32f33aa0b2274f6b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::getInputs</definition>
+        <argsstring>(std::vector&lt; unsigned int &gt; &amp;inputs) const</argsstring>
+        <name>getInputs</name>
+        <param>
+          <type>std::vector&lt; unsigned int &gt; &amp;</type>
+          <declname>inputs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="262" column="1" bodyfile="src/Genotype.hpp" bodystart="262" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1afd23aecb452ee3377e3da9c225db2cbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::getOutputs</definition>
+        <argsstring>(std::vector&lt; unsigned int &gt; &amp;outputs) const</argsstring>
+        <name>getOutputs</name>
+        <param>
+          <type>std::vector&lt; unsigned int &gt; &amp;</type>
+          <declname>outputs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="269" column="1" bodyfile="src/Genotype.hpp" bodystart="269" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a591f9866b698b3c3e687298e1edaa5e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_indie_neat_1_1_genotype_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::addNode</definition>
+        <argsstring>(NodeType type, std::pair&lt; double, double &gt; const &amp;range)</argsstring>
+        <name>addNode</name>
+        <param>
+          <type>NodeType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; double, double &gt; const &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="276" column="1" bodyfile="src/Genotype.hpp" bodystart="276" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a61c94ac7533eadc6c710522a5e577977" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::setFitness</definition>
+        <argsstring>(double fitness)</argsstring>
+        <name>setFitness</name>
+        <param>
+          <type>double</type>
+          <declname>fitness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="286" column="1" bodyfile="src/Genotype.hpp" bodystart="286" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a79a07d4c8ab04900d1630aa86d6eba76" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::getFitness</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getFitness</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="290" column="1" bodyfile="src/Genotype.hpp" bodystart="290" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a371bdcc52d4ac1ba306354413a772df4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::setState</definition>
+        <argsstring>(State state)</argsstring>
+        <name>setState</name>
+        <param>
+          <type>State</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="294" column="1" bodyfile="src/Genotype.hpp" bodystart="294" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1ab5b6bbab4dbed77350d30a051ab621e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>State</type>
+        <definition>State IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::getState</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="298" column="1" bodyfile="src/Genotype.hpp" bodystart="298" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a3962be224016a1646612027fb1ecf578" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>long long</type>
+        <definition>long long IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::getNumNodes</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getNumNodes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="302" column="1" bodyfile="src/Genotype.hpp" bodystart="302" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_genotype_1a7d0ab4939bfe9eef825e7ab5065d1780" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Genotype&lt; numInputs, numOutputs &gt;::setNumNodes</definition>
+        <argsstring>(long long num)</argsstring>
+        <name>setNumNodes</name>
+        <param>
+          <type>long long</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Genotype.hpp" line="306" column="1" bodyfile="src/Genotype.hpp" bodystart="306" bodyend="308"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref> class contains the information about the genome of the artificial neural network. </para>    </briefdescription>
+    <detaileddescription>
+<para>Inside the <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref> class we can retrieve each <ref refid="class_indie_neat_1_1_genotype_1_1_node" kindref="compound">Node</ref> and each <ref refid="class_indie_neat_1_1_genotype_1_1_gene" kindref="compound">Gene</ref> which contains all the knowledge of the artificial neural network. We can also retrieve all the path in the evolution history of the artificial neural network population. <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>numInputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains how many inputs has the genotype. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numOutputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains how many outputs has the genotype. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="src/Genotype.hpp" line="21" column="1" bodyfile="src/Genotype.hpp" bodystart="21" bodyend="316"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_genotype_1ab29ab333e973d811dba9a9860ee888a2" prot="private" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>_fitness</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1aa72c3dd5c60ef957639067fa3736430b" prot="private" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>_genes</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a5de291d503e236f404fe4193219df7e0" prot="private" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>_nodes</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1aa3b39d4a6f48f9d62195740b4bb2e06a" prot="private" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>_numNodes</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a0a9691fbe30bcf91b6d1b55885fa7753" prot="private" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>_state</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a591f9866b698b3c3e687298e1edaa5e9" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>addNode</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a5e07223bea57cce159a4856b0f1d4be9" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>Genes</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a27509878844ce83fde93f94c62f031b9" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>Genes</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1af998bd394c21db8cfb6b0efa58fe2a99" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>Genotype</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1ae0580322e5095a549a514af6986e92ae" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>Genotype</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a61b75e0ad6ab03232cda13ab7de78c79" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>Genotype</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a79a07d4c8ab04900d1630aa86d6eba76" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>getFitness</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a177c51e16af584e32f33aa0b2274f6b0" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>getInputs</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a3962be224016a1646612027fb1ecf578" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>getNumNodes</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1afd23aecb452ee3377e3da9c225db2cbf" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>getOutputs</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1ab5b6bbab4dbed77350d30a051ab621e7" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>getState</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a660be7d08066d8a4d4dbd98fc90d9e64" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>Nodes</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a21689d356b3e334dcc748b303537a7c5" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>Nodes</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a3c565c5d61ead686f245d585ddfa2507" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>NodeType</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1afaac0a604631f5d52c5a3d2d9ba737b3" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>operator=</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a61c94ac7533eadc6c710522a5e577977" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>setFitness</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a7d0ab4939bfe9eef825e7ab5065d1780" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>setNumNodes</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a371bdcc52d4ac1ba306354413a772df4" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>setState</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a2e76da677f35a309198db3465cbf6561" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>State</name></member>
+      <member refid="class_indie_neat_1_1_genotype_1a424b1ab5ca08aa5544d6fe61a0fcf945" prot="public" virt="non-virtual"><scope>IndieNeat::Genotype</scope><name>~Genotype</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

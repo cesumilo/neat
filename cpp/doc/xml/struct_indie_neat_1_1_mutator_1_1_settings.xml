@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_indie_neat_1_1_mutator_1_1_settings" kind="struct" language="C++" prot="public">
+    <compoundname>IndieNeat::Mutator::Settings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutator_1_1_settings_1ae30aec8ccc7dcfc2a661a7ec36bb5765" prot="public" static="no" mutable="no">
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt;double, double&gt; IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::weightRange</definition>
+        <argsstring></argsstring>
+        <name>weightRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="49" column="1" bodyfile="src/Mutator.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutator_1_1_settings_1a78f388242170815faa91a597d89fcf58" prot="public" static="no" mutable="no">
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt;double, double&gt; IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::pertubationRange</definition>
+        <argsstring></argsstring>
+        <name>pertubationRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="50" column="1" bodyfile="src/Mutator.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutator_1_1_settings_1a2bc1c3afedcb9f9235836d4a70e25de2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::weightRandProb</definition>
+        <argsstring></argsstring>
+        <name>weightRandProb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="51" column="1" bodyfile="src/Mutator.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutator_1_1_settings_1ad62edb975c3d76c0215a69438f0bcbc7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::addConnectionProb</definition>
+        <argsstring></argsstring>
+        <name>addConnectionProb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="52" column="1" bodyfile="src/Mutator.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutator_1_1_settings_1a349a029ab408d4e24495eb38b3800f09" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::addNodeProb</definition>
+        <argsstring></argsstring>
+        <name>addNodeProb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="53" column="1" bodyfile="src/Mutator.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutator_1_1_settings_1ad51d060e7306b4bd09feac87f738219a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::weightMutationProb</definition>
+        <argsstring></argsstring>
+        <name>weightMutationProb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="54" column="1" bodyfile="src/Mutator.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_indie_neat_1_1_mutator_1_1_settings_1a8597f51070ebcae8cd8e6dea3721a3c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::Settings</definition>
+        <argsstring>(void)</argsstring>
+        <name>Settings</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="16" column="1" bodyfile="src/Mutator.hpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_mutator_1_1_settings_1aaed707005142f94c0707245196d94807" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::Settings</definition>
+        <argsstring>(std::pair&lt; double, double &gt; const &amp;weightR, std::pair&lt; double, double &gt; const &amp;pertubRange, double weightP, double connectionP, double nodeP, double weightMutProb)</argsstring>
+        <name>Settings</name>
+        <param>
+          <type>std::pair&lt; double, double &gt; const &amp;</type>
+          <declname>weightR</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; double, double &gt; const &amp;</type>
+          <declname>pertubRange</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>weightP</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>connectionP</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>nodeP</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>weightMutProb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="21" column="1" bodyfile="src/Mutator.hpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_mutator_1_1_settings_1a85e9e4c7eee813840efa5342147e623f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::Settings</definition>
+        <argsstring>(Settings const &amp;settings)</argsstring>
+        <name>Settings</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_mutator_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="27" column="1" bodyfile="src/Mutator.hpp" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_mutator_1_1_settings_1a4cec6e7781531dbccb221d8a7c424672" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::~Settings</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Settings</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="33" column="1" bodyfile="src/Mutator.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_mutator_1_1_settings_1abda6fa8e9a3e2b7b4721610b9d85b04d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_indie_neat_1_1_mutator_1_1_settings" kindref="compound">Settings</ref> &amp;</type>
+        <definition>Settings&amp; IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Settings::operator=</definition>
+        <argsstring>(Settings const &amp;settings)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_mutator_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="35" column="1" bodyfile="src/Mutator.hpp" bodystart="35" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Mutator.hpp" line="15" column="1" bodyfile="src/Mutator.hpp" bodystart="14" bodyend="55"/>
+    <listofallmembers>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1ad62edb975c3d76c0215a69438f0bcbc7" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>addConnectionProb</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1a349a029ab408d4e24495eb38b3800f09" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>addNodeProb</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1abda6fa8e9a3e2b7b4721610b9d85b04d" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>operator=</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1a78f388242170815faa91a597d89fcf58" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>pertubationRange</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1a8597f51070ebcae8cd8e6dea3721a3c8" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>Settings</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1aaed707005142f94c0707245196d94807" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>Settings</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1a85e9e4c7eee813840efa5342147e623f" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>Settings</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1ad51d060e7306b4bd09feac87f738219a" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>weightMutationProb</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1a2bc1c3afedcb9f9235836d4a70e25de2" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>weightRandProb</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1ae30aec8ccc7dcfc2a661a7ec36bb5765" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>weightRange</name></member>
+      <member refid="struct_indie_neat_1_1_mutator_1_1_settings_1a4cec6e7781531dbccb221d8a7c424672" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator::Settings</scope><name>~Settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

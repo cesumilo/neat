@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_neat_engine_exception" kind="class" language="C++" prot="public">
+    <compoundname>IndieNeat::NeatEngineException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_neat_engine_exception_1ae9eb710a66ab11ab31bfcc269a0d9099" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IndieNeat::NeatEngineException::_msg</definition>
+        <argsstring></argsstring>
+        <name>_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngineException.hh" line="21" column="1" bodyfile="src/NeatEngineException.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_exception_1a47aeecd069e952c8f2a099bdb071de7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::NeatEngineException::NeatEngineException</definition>
+        <argsstring>(std::string const &amp;msg)</argsstring>
+        <name>NeatEngineException</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngineException.hh" line="12" column="1" bodyfile="src/NeatEngineException.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_exception_1a55ce9805a9033945380d1926ebd4ada4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::NeatEngineException::NeatEngineException</definition>
+        <argsstring>(NeatEngineException const &amp;)</argsstring>
+        <name>NeatEngineException</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_neat_engine_exception" kindref="compound">NeatEngineException</ref> const &amp;</type>
+          <defname>copy</defname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngineException.hh" line="13" column="1" bodyfile="src/NeatEngineException.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_exception_1aa9e501d085fe3bdc21bbda0195c31d2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::NeatEngineException::~NeatEngineException</definition>
+        <argsstring>(void)</argsstring>
+        <name>~NeatEngineException</name>
+        <param>
+          <type>void</type>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngineException.hh" line="14" column="1" bodyfile="src/NeatEngineException.cpp" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_exception_1a28dfd2e238c68fc58faaeae3bf13fc54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_indie_neat_1_1_neat_engine_exception" kindref="compound">NeatEngineException</ref> &amp;</type>
+        <definition>NeatEngineException &amp; IndieNeat::NeatEngineException::operator=</definition>
+        <argsstring>(NeatEngineException const &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_neat_engine_exception" kindref="compound">NeatEngineException</ref> const &amp;</type>
+          <defname>copy</defname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngineException.hh" line="16" column="1" bodyfile="src/NeatEngineException.cpp" bodystart="16" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_neat_engine_exception_1a007205e8f089da458f2728708f9d7c4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * IndieNeat::NeatEngineException::what</definition>
+        <argsstring>(void) const</argsstring>
+        <name>what</name>
+        <param>
+          <type>void</type>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatEngineException.hh" line="18" column="1" bodyfile="src/NeatEngineException.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="22">
+        <label>IndieNeat::NeatEngineException</label>
+        <link refid="class_indie_neat_1_1_neat_engine_exception"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="24">
+        <label>IndieNeat::NeatEngineException</label>
+        <link refid="class_indie_neat_1_1_neat_engine_exception"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/NeatEngineException.hh" line="10" column="1" bodyfile="src/NeatEngineException.hh" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_neat_engine_exception_1ae9eb710a66ab11ab31bfcc269a0d9099" prot="private" virt="non-virtual"><scope>IndieNeat::NeatEngineException</scope><name>_msg</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_exception_1a47aeecd069e952c8f2a099bdb071de7c" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngineException</scope><name>NeatEngineException</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_exception_1a55ce9805a9033945380d1926ebd4ada4" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngineException</scope><name>NeatEngineException</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_exception_1a28dfd2e238c68fc58faaeae3bf13fc54" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngineException</scope><name>operator=</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_exception_1a007205e8f089da458f2728708f9d7c4c" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngineException</scope><name>what</name></member>
+      <member refid="class_indie_neat_1_1_neat_engine_exception_1aa9e501d085fe3bdc21bbda0195c31d2d" prot="public" virt="non-virtual"><scope>IndieNeat::NeatEngineException</scope><name>~NeatEngineException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

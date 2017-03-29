@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_indie_neat_1_1_backup_1_1_parameters" kind="struct" language="C++" prot="private">
+    <compoundname>IndieNeat::Backup::Parameters</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_parameters_1a5635d4c3eb4376c3fe24bdc9b1626f8a" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Parameters::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="66" column="1" bodyfile="src/Backup.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_parameters_1a7e663c95e14103d72d55cf398458daef" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Parameters::nbParams</definition>
+        <argsstring></argsstring>
+        <name>nbParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="67" column="1" bodyfile="src/Backup.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Backup.hpp" line="65" column="1" bodyfile="src/Backup.hpp" bodystart="64" bodyend="68"/>
+    <listofallmembers>
+      <member refid="struct_indie_neat_1_1_backup_1_1_parameters_1a5635d4c3eb4376c3fe24bdc9b1626f8a" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Parameters</scope><name>name</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_parameters_1a7e663c95e14103d72d55cf398458daef" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Parameters</scope><name>nbParams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

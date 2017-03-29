@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_operator" kind="class" language="C++" prot="public">
+    <compoundname>IndieNeat::Operator</compoundname>
+    <innerclass refid="struct_indie_neat_1_1_operator_1_1_settings" prot="public">IndieNeat::Operator::Settings</innerclass>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>numInputs</declname>
+        <defname>numInputs</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>numOutputs</declname>
+        <defname>numOutputs</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_operator_1a124224fb1a75216c26cd9a1b33858c2f" prot="private" static="yes" mutable="no">
+        <type><ref refid="struct_indie_neat_1_1_operator_1_1_settings" kindref="compound">Settings</ref></type>
+        <definition>Operator&lt; numInputs, numOutputs &gt;::Settings IndieNeat::Operator&lt; numInputs, numOutputs &gt;::_settings</definition>
+        <argsstring></argsstring>
+        <name>_settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="65" column="1" bodyfile="src/Operator.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_operator_1a3906c464cb3fe586ac8d0cbdcb8d57a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Set</definition>
+        <argsstring>(Settings const &amp;)</argsstring>
+        <name>Set</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_operator_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="51" column="1" bodyfile="src/Operator.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_operator_1ad509f15148687f615db47089c89040a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Operator&lt; numInputs, numOutputs &gt;::LineUp</definition>
+        <argsstring>(std::vector&lt; typename Genotype&lt; numInputs, numOutputs &gt;::Gene *&gt; const &amp;g1, std::vector&lt; typename Genotype&lt; numInputs, numOutputs &gt;::Gene *&gt; const &amp;g2, std::vector&lt; typename Genotype&lt; numInputs, numOutputs &gt;::Gene *&gt; &amp;p1, std::vector&lt; typename Genotype&lt; numInputs, numOutputs &gt;::Gene *&gt; &amp;p2)</argsstring>
+        <name>LineUp</name>
+        <param>
+          <type>std::vector&lt; typename <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt;::Gene *&gt; const &amp;</type>
+          <declname>g1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; typename <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt;::Gene *&gt; const &amp;</type>
+          <declname>g2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; typename <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt;::Gene *&gt; &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; typename <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt;::Gene *&gt; &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="53" column="1" bodyfile="src/Operator.hpp" bodystart="78" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_operator_1a82837d3db032d7817d0a09ef6616d88c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; *</type>
+        <definition>Genotype&lt; numInputs, numOutputs &gt; * IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Crossover</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; const &amp;g1, Genotype&lt; numInputs, numOutputs &gt; const &amp;g2)</argsstring>
+        <name>Crossover</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; const &amp;</type>
+          <declname>g1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; const &amp;</type>
+          <declname>g2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="58" column="1" bodyfile="src/Operator.hpp" bodystart="113" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_operator_1a1d919a95458ce37d7be2b0231785d4dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::Operator&lt; numInputs, numOutputs &gt;::ComputeDistance</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; const &amp;g1, Genotype&lt; numInputs, numOutputs &gt; const &amp;g2, unsigned int maxGenomeSize)</argsstring>
+        <name>ComputeDistance</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; const &amp;</type>
+          <declname>g1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; const &amp;</type>
+          <declname>g2</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>maxGenomeSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="61" column="1" bodyfile="src/Operator.hpp" bodystart="180" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Operator.hpp" line="14" column="1" bodyfile="src/Operator.hpp" bodystart="13" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_operator_1a124224fb1a75216c26cd9a1b33858c2f" prot="private" virt="non-virtual"><scope>IndieNeat::Operator</scope><name>_settings</name></member>
+      <member refid="class_indie_neat_1_1_operator_1a1d919a95458ce37d7be2b0231785d4dd" prot="public" virt="non-virtual"><scope>IndieNeat::Operator</scope><name>ComputeDistance</name></member>
+      <member refid="class_indie_neat_1_1_operator_1a82837d3db032d7817d0a09ef6616d88c" prot="public" virt="non-virtual"><scope>IndieNeat::Operator</scope><name>Crossover</name></member>
+      <member refid="class_indie_neat_1_1_operator_1ad509f15148687f615db47089c89040a7" prot="public" virt="non-virtual"><scope>IndieNeat::Operator</scope><name>LineUp</name></member>
+      <member refid="class_indie_neat_1_1_operator_1a3906c464cb3fe586ac8d0cbdcb8d57a8" prot="public" virt="non-virtual"><scope>IndieNeat::Operator</scope><name>Set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

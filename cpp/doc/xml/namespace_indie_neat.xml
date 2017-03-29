@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_indie_neat" kind="namespace" language="C++">
+    <compoundname>IndieNeat</compoundname>
+    <innerclass refid="class_indie_neat_1_1_backup" prot="public">IndieNeat::Backup</innerclass>
+    <innerclass refid="class_indie_neat_1_1_genotype" prot="public">IndieNeat::Genotype</innerclass>
+    <innerclass refid="class_indie_neat_1_1_mutation_manager" prot="public">IndieNeat::MutationManager</innerclass>
+    <innerclass refid="class_indie_neat_1_1_mutator" prot="public">IndieNeat::Mutator</innerclass>
+    <innerclass refid="class_indie_neat_1_1_neat_engine" prot="public">IndieNeat::NeatEngine</innerclass>
+    <innerclass refid="class_indie_neat_1_1_neat_engine_exception" prot="public">IndieNeat::NeatEngineException</innerclass>
+    <innerclass refid="class_indie_neat_1_1_operator" prot="public">IndieNeat::Operator</innerclass>
+    <innerclass refid="class_indie_neat_1_1_phenotype" prot="public">IndieNeat::Phenotype</innerclass>
+    <innerclass refid="class_indie_neat_1_1_population" prot="public">IndieNeat::Population</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_backup_8hpp_1aca0c67b1ccd3e94f26cb72df685195f8" prot="public" static="no">
+        <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; 2, 2 &gt;</type>
+        <definition>using IndieNeat::BbbGenotype = typedef Genotype&lt;2, 2&gt;</definition>
+        <argsstring></argsstring>
+        <name>BbbGenotype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="19" column="1" bodyfile="src/Backup.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Backup.cpp" line="4" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+\hypertarget{class_indie_neat_1_1_population_1_1_species}{}\section{Indie\+Neat\+:\+:Population$<$ num\+Inputs, num\+Outputs $>$\+:\+:Species Class Reference}
+\label{class_indie_neat_1_1_population_1_1_species}\index{Indie\+Neat\+::\+Population$<$ num\+Inputs, num\+Outputs $>$\+::\+Species@{Indie\+Neat\+::\+Population$<$ num\+Inputs, num\+Outputs $>$\+::\+Species}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a87fcfdfb63a564672b8394470f674982}\label{class_indie_neat_1_1_population_1_1_species_a87fcfdfb63a564672b8394470f674982}} 
+{\bfseries Species} (\hyperlink{class_indie_neat_1_1_population_1_1_species}{Species} const \&copy)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_ad3529760d9ef0f297b10848bee5dd82e}\label{class_indie_neat_1_1_population_1_1_species_ad3529760d9ef0f297b10848bee5dd82e}} 
+\hyperlink{class_indie_neat_1_1_population_1_1_species}{Species} \& {\bfseries operator=} (\hyperlink{class_indie_neat_1_1_population_1_1_species}{Species} const \&copy)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a927a6e3fbcadf1fd8dc70e0572f45397}\label{class_indie_neat_1_1_population_1_1_species_a927a6e3fbcadf1fd8dc70e0572f45397}} 
+void {\bfseries init} (\hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ \&genome)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_ad6237428aa0d689398451c6eed27058c}\label{class_indie_neat_1_1_population_1_1_species_ad6237428aa0d689398451c6eed27058c}} 
+void {\bfseries destroy} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_addd4db6f02889048d78cb230bc6be9e7}\label{class_indie_neat_1_1_population_1_1_species_addd4db6f02889048d78cb230bc6be9e7}} 
+std\+::vector$<$ \hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ $\ast$ $>$ \& {\bfseries Genomes} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a98fafc1451a505d95963e0dc2f4555f8}\label{class_indie_neat_1_1_population_1_1_species_a98fafc1451a505d95963e0dc2f4555f8}} 
+\hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ \& {\bfseries Reference} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a51a1a704e3ba31f6b58cbc0e042c404a}\label{class_indie_neat_1_1_population_1_1_species_a51a1a704e3ba31f6b58cbc0e042c404a}} 
+void {\bfseries adjust\+Fitness} (double distance\+Threshold, unsigned int max\+Genome\+Size)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a4569503da7966e73bcefaf19b08ca1b9}\label{class_indie_neat_1_1_population_1_1_species_a4569503da7966e73bcefaf19b08ca1b9}} 
+unsigned int {\bfseries number\+Of\+Not\+Evaluated} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a7deb0c402c6876ed15e3c8d07d7a458c}\label{class_indie_neat_1_1_population_1_1_species_a7deb0c402c6876ed15e3c8d07d7a458c}} 
+unsigned int {\bfseries number\+Of\+Evaluated} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a24ef0cd279f380c2d7cf74cd5fdb4622}\label{class_indie_neat_1_1_population_1_1_species_a24ef0cd279f380c2d7cf74cd5fdb4622}} 
+\hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ $\ast$ {\bfseries get\+Random\+Genome} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_abd867d0cff4a1f6fd8c2c5dd93cfce0d}\label{class_indie_neat_1_1_population_1_1_species_abd867d0cff4a1f6fd8c2c5dd93cfce0d}} 
+void {\bfseries reproduce} (std\+::vector$<$ \hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ $\ast$$>$ \&childs, unsigned int num\+Of\+Childs, double species\+Keeping\+Rate, double inter\+Species\+Mating\+Rate, \hyperlink{class_indie_neat_1_1_population_1_1_species}{Species} \&specie)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a58d4063013f4370ee63d18e331aa8a95}\label{class_indie_neat_1_1_population_1_1_species_a58d4063013f4370ee63d18e331aa8a95}} 
+void {\bfseries evaluate} (std\+::vector$<$ \hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ $\ast$ $>$ \&buffer, unsigned int number\+Of\+Genomes)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a5119a841f2653f5260d49012a0e25455}\label{class_indie_neat_1_1_population_1_1_species_a5119a841f2653f5260d49012a0e25455}} 
+void {\bfseries set\+Stagnant\+Generation} (unsigned int gen)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a9c3ac1e5c035e05038b6e5e9494207c3}\label{class_indie_neat_1_1_population_1_1_species_a9c3ac1e5c035e05038b6e5e9494207c3}} 
+unsigned int {\bfseries get\+Stagnant\+Generation} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a894ac24c374fb20f3413642568121a74}\label{class_indie_neat_1_1_population_1_1_species_a894ac24c374fb20f3413642568121a74}} 
+double {\bfseries get\+Stagnant\+Fitness} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_1_1_species_a619f58d475012bc8bce9a52dc3233b43}\label{class_indie_neat_1_1_population_1_1_species_a619f58d475012bc8bce9a52dc3233b43}} 
+void {\bfseries set\+Stagnant\+Fitness} (double fit)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Population.\+hpp\end{DoxyCompactItemize}

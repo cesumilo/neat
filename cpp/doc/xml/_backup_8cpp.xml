@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_backup_8cpp" kind="file" language="C++">
+    <compoundname>Backup.cpp</compoundname>
+    <includes refid="_backup_8hpp" local="yes">Backup.hpp</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="13">
+        <label>MutationManager.hh</label>
+        <link refid="_mutation_manager_8hh_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>Backup.hpp</label>
+        <link refid="_backup_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="12">
+        <label>random</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="0">
+        <label>src/Backup.cpp</label>
+        <link refid="_backup_8cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>utility</label>
+      </node>
+      <node id="8">
+        <label>array</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>Genotype.hpp</label>
+        <link refid="_genotype_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_indie_neat">IndieNeat</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;Backup.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_indie_neat" kindref="compound">IndieNeat</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/>std::string<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Backup&lt;2,<sp/>2&gt;::_directory<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>Backup&lt;2,<sp/>2&gt;::PARAMS_FILE<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;engineParams.backup&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/>std::array&lt;Backup&lt;2,<sp/>2&gt;::Parameters,<sp/>17&gt;<sp/><sp/><sp/>Backup&lt;2,<sp/>2&gt;::parameters<sp/>=<sp/>{{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;PopulationSize&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;MaxStagnantGeneration&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;DistanceThreshold&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;OffspringsRate&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;InterSpeciesMatingRate&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;SpeciesKeepingRate&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;DefaultSpeciesPoolSize&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;DefaultWeightRange&quot;</highlight><highlight class="normal">,<sp/>2},</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;ExcessCoeficient&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;DisjointCoeficient&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;WeightAverageCoeficient&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;DefaultPerturbationRange&quot;</highlight><highlight class="normal">,<sp/>2},</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;ExpectedFitness&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;MaximumGeneration&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;AddNeuronProbability&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;AddConnectionProbability&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;RandomWeightProbability&quot;</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>}};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Backup.cpp"/>
+  </compounddef>
+</doxygen>

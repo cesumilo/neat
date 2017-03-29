@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_indie_neat_1_1_population_1_1_genome_container" kind="struct" language="C++" prot="public">
+    <compoundname>IndieNeat::Population::GenomeContainer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_genome_container_1ac2a981c2c2e2737408fa51e586642883" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Population&lt; numInputs, numOutputs &gt;::GenomeContainer::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="49" column="1" bodyfile="src/Population.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_genome_container_1a4ec95dc29ab8fa7544fdbb664f027dcc" prot="public" static="no" mutable="no">
+        <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; *</type>
+        <definition>Genotype&lt;numInputs, numOutputs&gt;* IndieNeat::Population&lt; numInputs, numOutputs &gt;::GenomeContainer::genome</definition>
+        <argsstring></argsstring>
+        <name>genome</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="50" column="1" bodyfile="src/Population.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_indie_neat_1_1_population_1_1_genome_container_1a85a60321b3d308c05b0bdb15ecff6e06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Population&lt; numInputs, numOutputs &gt;::GenomeContainer::GenomeContainer</definition>
+        <argsstring>(unsigned int id, Genotype&lt; numInputs, numOutputs &gt; &amp;g)</argsstring>
+        <name>GenomeContainer</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="29" column="1" bodyfile="src/Population.hpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_population_1_1_genome_container_1a1da0baf8fba962d13db18d200ea7f1a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Population&lt; numInputs, numOutputs &gt;::GenomeContainer::GenomeContainer</definition>
+        <argsstring>(GenomeContainer const &amp;copy)</argsstring>
+        <name>GenomeContainer</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_population_1_1_genome_container" kindref="compound">GenomeContainer</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="33" column="1" bodyfile="src/Population.hpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_population_1_1_genome_container_1acf826636f173bcc04a9b7bf00591872a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Population&lt; numInputs, numOutputs &gt;::GenomeContainer::~GenomeContainer</definition>
+        <argsstring>(void)</argsstring>
+        <name>~GenomeContainer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="37" column="1" bodyfile="src/Population.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_population_1_1_genome_container_1aa9a6435f66f80cfda0169b07235b8821" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_indie_neat_1_1_population_1_1_genome_container" kindref="compound">GenomeContainer</ref> &amp;</type>
+        <definition>GenomeContainer&amp; IndieNeat::Population&lt; numInputs, numOutputs &gt;::GenomeContainer::operator=</definition>
+        <argsstring>(GenomeContainer const &amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_population_1_1_genome_container" kindref="compound">GenomeContainer</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="39" column="1" bodyfile="src/Population.hpp" bodystart="39" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Population.hpp" line="28" column="1" bodyfile="src/Population.hpp" bodystart="27" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct_indie_neat_1_1_population_1_1_genome_container_1a4ec95dc29ab8fa7544fdbb664f027dcc" prot="public" virt="non-virtual"><scope>IndieNeat::Population::GenomeContainer</scope><name>genome</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_genome_container_1a85a60321b3d308c05b0bdb15ecff6e06" prot="public" virt="non-virtual"><scope>IndieNeat::Population::GenomeContainer</scope><name>GenomeContainer</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_genome_container_1a1da0baf8fba962d13db18d200ea7f1a1" prot="public" virt="non-virtual"><scope>IndieNeat::Population::GenomeContainer</scope><name>GenomeContainer</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_genome_container_1ac2a981c2c2e2737408fa51e586642883" prot="public" virt="non-virtual"><scope>IndieNeat::Population::GenomeContainer</scope><name>idx</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_genome_container_1aa9a6435f66f80cfda0169b07235b8821" prot="public" virt="non-virtual"><scope>IndieNeat::Population::GenomeContainer</scope><name>operator=</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_genome_container_1acf826636f173bcc04a9b7bf00591872a" prot="public" virt="non-virtual"><scope>IndieNeat::Population::GenomeContainer</scope><name>~GenomeContainer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

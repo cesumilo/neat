@@ -1,0 +1,67 @@
+\hypertarget{class_indie_neat_1_1_phenotype}{}\section{Indie\+Neat\+:\+:Phenotype$<$ num\+Inputs, num\+Outputs $>$ Class Template Reference}
+\label{class_indie_neat_1_1_phenotype}\index{Indie\+Neat\+::\+Phenotype$<$ num\+Inputs, num\+Outputs $>$@{Indie\+Neat\+::\+Phenotype$<$ num\+Inputs, num\+Outputs $>$}}
+
+
+Allows to interpret \hyperlink{class_indie_neat_1_1_genotype}{Genotype} into \hyperlink{class_indie_neat_1_1_phenotype}{Phenotype}.  
+
+
+
+
+{\ttfamily \#include $<$Phenotype.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_indie_neat_1_1_phenotype_a073fe9386602c8cce9dac9fc78bbce35}{Phenotype} (\hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ const \&genome)
+\begin{DoxyCompactList}\small\item\em Construct a phenotype with a given genome. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_phenotype_a68ce3283f94cda0581322ba4fcf10ae8}\label{class_indie_neat_1_1_phenotype_a68ce3283f94cda0581322ba4fcf10ae8}} 
+\hyperlink{class_indie_neat_1_1_phenotype_a68ce3283f94cda0581322ba4fcf10ae8}{$\sim$\+Phenotype} (void)
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{class_indie_neat_1_1_phenotype}{Phenotype} class. Destructor of \hyperlink{class_indie_neat_1_1_phenotype}{Phenotype} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_phenotype_a2a8d1351b2d63539e825fa720ff9699e}\label{class_indie_neat_1_1_phenotype_a2a8d1351b2d63539e825fa720ff9699e}} 
+void {\bfseries init} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_phenotype_acf8ee08e9e881f33ca40f4d839a39a79}\label{class_indie_neat_1_1_phenotype_acf8ee08e9e881f33ca40f4d839a39a79}} 
+std\+::vector$<$ double $>$ const  \& {\bfseries get\+Outputs} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_phenotype_a8b5049674532efec31c7f4a0b742ec18}\label{class_indie_neat_1_1_phenotype_a8b5049674532efec31c7f4a0b742ec18}} 
+std\+::vector$<$ double $>$ const  \& {\bfseries feed\+Forward} (std\+::vector$<$ double $>$ const \&inputs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$unsigned int num\+Inputs, unsigned int num\+Outputs$>$\newline
+class Indie\+Neat\+::\+Phenotype$<$ num\+Inputs, num\+Outputs $>$}
+
+Allows to interpret \hyperlink{class_indie_neat_1_1_genotype}{Genotype} into \hyperlink{class_indie_neat_1_1_phenotype}{Phenotype}. 
+
+With this class, you can create a phenotype based on the given genotype. It will allows you to compute the result of your model in terms of the inputs. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em num\+Inputs} & Describe how many input takes the phenotype. \\
+\hline
+{\em num\+Outputs} & Describe how many outputs has the phenotype. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_indie_neat_1_1_phenotype_a073fe9386602c8cce9dac9fc78bbce35}\label{class_indie_neat_1_1_phenotype_a073fe9386602c8cce9dac9fc78bbce35}} 
+\index{Indie\+Neat\+::\+Phenotype@{Indie\+Neat\+::\+Phenotype}!Phenotype@{Phenotype}}
+\index{Phenotype@{Phenotype}!Indie\+Neat\+::\+Phenotype@{Indie\+Neat\+::\+Phenotype}}
+\subsubsection{\texorpdfstring{Phenotype()}{Phenotype()}}
+{\footnotesize\ttfamily template$<$unsigned int num\+Inputs, unsigned int num\+Outputs$>$ \\
+\hyperlink{class_indie_neat_1_1_phenotype}{Indie\+Neat\+::\+Phenotype}$<$ num\+Inputs, num\+Outputs $>$\+::\hyperlink{class_indie_neat_1_1_phenotype}{Phenotype} (\begin{DoxyParamCaption}\item[{\hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ const \&}]{genome }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a phenotype with a given genome. 
+
+Construct a phenotype based on the given genome. 
+\begin{DoxyParams}{Parameters}
+{\em genome} & Contains all the information about the genome to construct the phenotype. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Phenotype.\+hpp\end{DoxyCompactItemize}

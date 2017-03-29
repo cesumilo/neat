@@ -1,0 +1,63 @@
+\hypertarget{class_indie_neat_1_1_population}{}\section{Indie\+Neat\+:\+:Population$<$ num\+Inputs, num\+Outputs $>$ Class Template Reference}
+\label{class_indie_neat_1_1_population}\index{Indie\+Neat\+::\+Population$<$ num\+Inputs, num\+Outputs $>$@{Indie\+Neat\+::\+Population$<$ num\+Inputs, num\+Outputs $>$}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_indie_neat_1_1_population_1_1_genome_container}{Genome\+Container}
+\item 
+struct \hyperlink{struct_indie_neat_1_1_population_1_1_genome_score}{Genome\+Score}
+\item 
+struct \hyperlink{struct_indie_neat_1_1_population_1_1_settings}{Settings}
+\item 
+class \hyperlink{class_indie_neat_1_1_population_1_1_species}{Species}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_ab9c85c50e1476700ad373a8f536e8898}\label{class_indie_neat_1_1_population_ab9c85c50e1476700ad373a8f536e8898}} 
+{\bfseries Population} (\hyperlink{struct_indie_neat_1_1_population_1_1_settings}{Settings} const \&settings)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a32ef3a36f8b74bd4a75981e0d3ec1d2b}\label{class_indie_neat_1_1_population_a32ef3a36f8b74bd4a75981e0d3ec1d2b}} 
+{\bfseries Population} (\hyperlink{class_indie_neat_1_1_population}{Population} const \&copy)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a24b43b8cd8743d15542980e124acb6a5}\label{class_indie_neat_1_1_population_a24b43b8cd8743d15542980e124acb6a5}} 
+\hyperlink{class_indie_neat_1_1_population}{Population} \& {\bfseries operator=} (\hyperlink{class_indie_neat_1_1_population}{Population} const \&copy)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a250935f7589600cd6ed661288c09f760}\label{class_indie_neat_1_1_population_a250935f7589600cd6ed661288c09f760}} 
+void {\bfseries init} (\hyperlink{struct_indie_neat_1_1_population_1_1_settings}{Settings} const \&settings)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_ab8d6e15a79aa6138e3c369718a727690}\label{class_indie_neat_1_1_population_ab8d6e15a79aa6138e3c369718a727690}} 
+void {\bfseries set\+Settings} (\hyperlink{struct_indie_neat_1_1_population_1_1_settings}{Settings} const \&settings)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a22efadab423680576c832cf3a575f49a}\label{class_indie_neat_1_1_population_a22efadab423680576c832cf3a575f49a}} 
+std\+::vector$<$ \hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ $\ast$ $>$ const  \& {\bfseries Genomes} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a721b58835393fd9cb534e7c3838277eb}\label{class_indie_neat_1_1_population_a721b58835393fd9cb534e7c3838277eb}} 
+void {\bfseries evaluate} (std\+::vector$<$ \hyperlink{struct_indie_neat_1_1_population_1_1_genome_container}{Genome\+Container} $\ast$$>$ \&buffer, unsigned int num\+Of\+Genomes)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_ae681e4f9a1f67c0b050b35a1b7974444}\label{class_indie_neat_1_1_population_ae681e4f9a1f67c0b050b35a1b7974444}} 
+void {\bfseries push\+Score} (std\+::vector$<$ \hyperlink{struct_indie_neat_1_1_population_1_1_genome_score}{Genome\+Score} $\ast$$>$ const \&scores)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a96eb698db1c2f09a6d202643cdc4ae52}\label{class_indie_neat_1_1_population_a96eb698db1c2f09a6d202643cdc4ae52}} 
+double {\bfseries get\+Max\+Fitness} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a3a12ba241a847a9357be211f82fef815}\label{class_indie_neat_1_1_population_a3a12ba241a847a9357be211f82fef815}} 
+\hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ const  \& {\bfseries get\+Best\+Genome} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a579fa4d9fdf0b50b462b54bed3b0a8ec}\label{class_indie_neat_1_1_population_a579fa4d9fdf0b50b462b54bed3b0a8ec}} 
+bool {\bfseries is\+Evolving} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_ad176c408329efa7387880de7d1c2d540}\label{class_indie_neat_1_1_population_ad176c408329efa7387880de7d1c2d540}} 
+bool {\bfseries is\+Finished} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a46d92dda9ad0a6e499783da8e40ccc97}\label{class_indie_neat_1_1_population_a46d92dda9ad0a6e499783da8e40ccc97}} 
+bool {\bfseries save} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_population_a407e6e0437e79aaa4483cdd3cf4cb3a0}\label{class_indie_neat_1_1_population_a407e6e0437e79aaa4483cdd3cf4cb3a0}} 
+bool {\bfseries load} (std\+::string const \&dirname)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Population.\+hpp\end{DoxyCompactItemize}

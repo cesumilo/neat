@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_phenotype" kind="class" language="C++" prot="public">
+    <compoundname>IndieNeat::Phenotype</compoundname>
+    <includes refid="_phenotype_8hpp" local="no">Phenotype.hpp</includes>
+    <innerclass refid="class_indie_neat_1_1_phenotype_1_1_link" prot="private">IndieNeat::Phenotype::Link</innerclass>
+    <innerclass refid="class_indie_neat_1_1_phenotype_1_1_node" prot="private">IndieNeat::Phenotype::Node</innerclass>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>numInputs</declname>
+        <defname>numInputs</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>numOutputs</declname>
+        <defname>numOutputs</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_phenotype_1a9991e8f7648625f7d3f649b0aa80e0a3" prot="private" static="no" mutable="no">
+        <type>const <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+        <definition>const Genotype&lt;numInputs, numOutputs&gt;&amp; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::_genome</definition>
+        <argsstring></argsstring>
+        <name>_genome</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="251" column="1" bodyfile="src/Phenotype.hpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_phenotype_1aa90b27d07011a3cab44888aa31f61171" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, Node * &gt;</type>
+        <definition>std::map&lt;unsigned int, Node *&gt; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::_neurons</definition>
+        <argsstring></argsstring>
+        <name>_neurons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="252" column="1" bodyfile="src/Phenotype.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_phenotype_1a1e0a4da1d97b625a80c2d8a4372a31f2" prot="private" static="no" mutable="no">
+        <type>std::list&lt; Link * &gt;</type>
+        <definition>std::list&lt;Link *&gt; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::_links</definition>
+        <argsstring></argsstring>
+        <name>_links</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="253" column="1" bodyfile="src/Phenotype.hpp" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_phenotype_1ae6621fddc7dfe5fb7a6a6bc268436951" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::_answer</definition>
+        <argsstring></argsstring>
+        <name>_answer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="254" column="1" bodyfile="src/Phenotype.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1a073fe9386602c8cce9dac9fc78bbce35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Phenotype</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; const &amp;genome)</argsstring>
+        <name>Phenotype</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; const &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <briefdescription>
+<para>Construct a phenotype with a given genome. </para>        </briefdescription>
+        <detaileddescription>
+<para>Construct a phenotype based on the given genome. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>genome</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains all the information about the genome to construct the phenotype. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="146" column="1" bodyfile="src/Phenotype.hpp" bodystart="146" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1a68ce3283f94cda0581322ba4fcf10ae8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::~Phenotype</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Phenotype</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Destructor of <ref refid="class_indie_neat_1_1_phenotype" kindref="compound">Phenotype</ref> class. Destructor of <ref refid="class_indie_neat_1_1_phenotype" kindref="compound">Phenotype</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="152" column="1" bodyfile="src/Phenotype.hpp" bodystart="152" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1a2a8d1351b2d63539e825fa720ff9699e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::init</definition>
+        <argsstring>(void)</argsstring>
+        <name>init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="159" column="1" bodyfile="src/Phenotype.hpp" bodystart="159" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1acf8ee08e9e881f33ca40f4d839a39a79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt; const  &amp;</type>
+        <definition>std::vector&lt;double&gt; const&amp; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::getOutputs</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getOutputs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="193" column="1" bodyfile="src/Phenotype.hpp" bodystart="193" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1a8b5049674532efec31c7f4a0b742ec18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt; const  &amp;</type>
+        <definition>std::vector&lt;double&gt; const&amp; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::feedForward</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;inputs)</argsstring>
+        <name>feedForward</name>
+        <param>
+          <type>std::vector&lt; double &gt; const &amp;</type>
+          <declname>inputs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="197" column="1" bodyfile="src/Phenotype.hpp" bodystart="197" bodyend="243"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1afe5f2752747f771b5d636fecbc99dcf8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::Phenotype</definition>
+        <argsstring>(Phenotype const &amp;copy)</argsstring>
+        <name>Phenotype</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_phenotype" kindref="compound">Phenotype</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="246" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_phenotype_1a189afe9ad4efd15958d971e1efa79f9a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_indie_neat_1_1_phenotype" kindref="compound">Phenotype</ref> &amp;</type>
+        <definition>Phenotype&amp; IndieNeat::Phenotype&lt; numInputs, numOutputs &gt;::operator=</definition>
+        <argsstring>(Phenotype const &amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_phenotype" kindref="compound">Phenotype</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Phenotype.hpp" line="248" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Allows to interpret <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref> into <ref refid="class_indie_neat_1_1_phenotype" kindref="compound">Phenotype</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>With this class, you can create a phenotype based on the given genotype. It will allows you to compute the result of your model in terms of the inputs. <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>numInputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Describe how many input takes the phenotype. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numOutputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Describe how many outputs has the phenotype. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="src/Phenotype.hpp" line="23" column="1" bodyfile="src/Phenotype.hpp" bodystart="23" bodyend="255"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_phenotype_1ae6621fddc7dfe5fb7a6a6bc268436951" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>_answer</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1a9991e8f7648625f7d3f649b0aa80e0a3" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>_genome</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1a1e0a4da1d97b625a80c2d8a4372a31f2" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>_links</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1aa90b27d07011a3cab44888aa31f61171" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>_neurons</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1a8b5049674532efec31c7f4a0b742ec18" prot="public" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>feedForward</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1acf8ee08e9e881f33ca40f4d839a39a79" prot="public" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>getOutputs</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1a2a8d1351b2d63539e825fa720ff9699e" prot="public" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>init</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1a189afe9ad4efd15958d971e1efa79f9a" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>operator=</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1a073fe9386602c8cce9dac9fc78bbce35" prot="public" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>Phenotype</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1afe5f2752747f771b5d636fecbc99dcf8" prot="private" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>Phenotype</name></member>
+      <member refid="class_indie_neat_1_1_phenotype_1a68ce3283f94cda0581322ba4fcf10ae8" prot="public" virt="non-virtual"><scope>IndieNeat::Phenotype</scope><name>~Phenotype</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

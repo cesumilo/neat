@@ -1,0 +1,104 @@
+\hypertarget{class_indie_neat_1_1_genotype}{}\section{Indie\+Neat\+:\+:Genotype$<$ num\+Inputs, num\+Outputs $>$ Class Template Reference}
+\label{class_indie_neat_1_1_genotype}\index{Indie\+Neat\+::\+Genotype$<$ num\+Inputs, num\+Outputs $>$@{Indie\+Neat\+::\+Genotype$<$ num\+Inputs, num\+Outputs $>$}}
+
+
+The \hyperlink{class_indie_neat_1_1_genotype}{Genotype} class contains the information about the genome of the artificial neural network.  
+
+
+
+
+{\ttfamily \#include $<$Genotype.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_indie_neat_1_1_genotype_1_1_gene}{Gene}
+\item 
+class \hyperlink{class_indie_neat_1_1_genotype_1_1_node}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a3c565c5d61ead686f245d585ddfa2507}\label{class_indie_neat_1_1_genotype_a3c565c5d61ead686f245d585ddfa2507}} 
+enum {\bfseries Node\+Type} \{ {\bfseries I\+N\+P\+UT}, 
+{\bfseries O\+U\+T\+P\+UT}, 
+{\bfseries H\+I\+D\+D\+EN}
+ \}
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a2e76da677f35a309198db3465cbf6561}\label{class_indie_neat_1_1_genotype_a2e76da677f35a309198db3465cbf6561}} 
+enum {\bfseries State} \{ {\bfseries N\+O\+T\+\_\+\+E\+V\+A\+L\+U\+A\+T\+ED}, 
+{\bfseries I\+N\+\_\+\+E\+V\+A\+L\+U\+A\+T\+I\+ON}, 
+{\bfseries I\+S\+\_\+\+E\+V\+A\+L\+U\+A\+T\+ED}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_ae0580322e5095a549a514af6986e92ae}\label{class_indie_neat_1_1_genotype_ae0580322e5095a549a514af6986e92ae}} 
+{\bfseries Genotype} (std\+::pair$<$ double, double $>$ const \&range)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a61b75e0ad6ab03232cda13ab7de78c79}\label{class_indie_neat_1_1_genotype_a61b75e0ad6ab03232cda13ab7de78c79}} 
+{\bfseries Genotype} (\hyperlink{class_indie_neat_1_1_genotype}{Genotype} const \&copy)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_afaac0a604631f5d52c5a3d2d9ba737b3}\label{class_indie_neat_1_1_genotype_afaac0a604631f5d52c5a3d2d9ba737b3}} 
+\hyperlink{class_indie_neat_1_1_genotype}{Genotype} \& {\bfseries operator=} (\hyperlink{class_indie_neat_1_1_genotype}{Genotype} const \&copy)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a660be7d08066d8a4d4dbd98fc90d9e64}\label{class_indie_neat_1_1_genotype_a660be7d08066d8a4d4dbd98fc90d9e64}} 
+std\+::vector$<$ \hyperlink{class_indie_neat_1_1_genotype_1_1_node}{Node} $\ast$ $>$ \& {\bfseries Nodes} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a5e07223bea57cce159a4856b0f1d4be9}\label{class_indie_neat_1_1_genotype_a5e07223bea57cce159a4856b0f1d4be9}} 
+std\+::vector$<$ \hyperlink{class_indie_neat_1_1_genotype_1_1_gene}{Gene} $\ast$ $>$ \& {\bfseries Genes} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a21689d356b3e334dcc748b303537a7c5}\label{class_indie_neat_1_1_genotype_a21689d356b3e334dcc748b303537a7c5}} 
+std\+::vector$<$ \hyperlink{class_indie_neat_1_1_genotype_1_1_node}{Node} $\ast$ $>$ const  \& {\bfseries Nodes} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a27509878844ce83fde93f94c62f031b9}\label{class_indie_neat_1_1_genotype_a27509878844ce83fde93f94c62f031b9}} 
+std\+::vector$<$ \hyperlink{class_indie_neat_1_1_genotype_1_1_gene}{Gene} $\ast$ $>$ const  \& {\bfseries Genes} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a177c51e16af584e32f33aa0b2274f6b0}\label{class_indie_neat_1_1_genotype_a177c51e16af584e32f33aa0b2274f6b0}} 
+void {\bfseries get\+Inputs} (std\+::vector$<$ unsigned int $>$ \&inputs) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_afd23aecb452ee3377e3da9c225db2cbf}\label{class_indie_neat_1_1_genotype_afd23aecb452ee3377e3da9c225db2cbf}} 
+void {\bfseries get\+Outputs} (std\+::vector$<$ unsigned int $>$ \&outputs) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a591f9866b698b3c3e687298e1edaa5e9}\label{class_indie_neat_1_1_genotype_a591f9866b698b3c3e687298e1edaa5e9}} 
+\hyperlink{class_indie_neat_1_1_genotype_1_1_node}{Node} $\ast$ {\bfseries add\+Node} (Node\+Type type, std\+::pair$<$ double, double $>$ const \&range)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a61c94ac7533eadc6c710522a5e577977}\label{class_indie_neat_1_1_genotype_a61c94ac7533eadc6c710522a5e577977}} 
+void {\bfseries set\+Fitness} (double fitness)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a79a07d4c8ab04900d1630aa86d6eba76}\label{class_indie_neat_1_1_genotype_a79a07d4c8ab04900d1630aa86d6eba76}} 
+double {\bfseries get\+Fitness} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a371bdcc52d4ac1ba306354413a772df4}\label{class_indie_neat_1_1_genotype_a371bdcc52d4ac1ba306354413a772df4}} 
+void {\bfseries set\+State} (State state)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_ab5b6bbab4dbed77350d30a051ab621e7}\label{class_indie_neat_1_1_genotype_ab5b6bbab4dbed77350d30a051ab621e7}} 
+State {\bfseries get\+State} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a3962be224016a1646612027fb1ecf578}\label{class_indie_neat_1_1_genotype_a3962be224016a1646612027fb1ecf578}} 
+long long {\bfseries get\+Num\+Nodes} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_a7d0ab4939bfe9eef825e7ab5065d1780}\label{class_indie_neat_1_1_genotype_a7d0ab4939bfe9eef825e7ab5065d1780}} 
+void {\bfseries set\+Num\+Nodes} (long long num)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$unsigned int num\+Inputs, unsigned int num\+Outputs$>$\newline
+class Indie\+Neat\+::\+Genotype$<$ num\+Inputs, num\+Outputs $>$}
+
+The \hyperlink{class_indie_neat_1_1_genotype}{Genotype} class contains the information about the genome of the artificial neural network. 
+
+Inside the \hyperlink{class_indie_neat_1_1_genotype}{Genotype} class we can retrieve each \hyperlink{class_indie_neat_1_1_genotype_1_1_node}{Node} and each \hyperlink{class_indie_neat_1_1_genotype_1_1_gene}{Gene} which contains all the knowledge of the artificial neural network. We can also retrieve all the path in the evolution history of the artificial neural network population. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em num\+Inputs} & Contains how many inputs has the genotype. \\
+\hline
+{\em num\+Outputs} & Contains how many outputs has the genotype. \\
+\hline
+\end{DoxyTemplParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Genotype.\+hpp\end{DoxyCompactItemize}

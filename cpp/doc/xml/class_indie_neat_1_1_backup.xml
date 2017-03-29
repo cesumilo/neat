@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_backup" kind="class" language="C++" prot="public">
+    <compoundname>IndieNeat::Backup</compoundname>
+    <innerclass refid="struct_indie_neat_1_1_backup_1_1_packed_genome" prot="public">IndieNeat::Backup::PackedGenome</innerclass>
+    <innerclass refid="struct_indie_neat_1_1_backup_1_1_parameters" prot="private">IndieNeat::Backup::Parameters</innerclass>
+    <innerclass refid="struct_indie_neat_1_1_backup_1_1_params" prot="public">IndieNeat::Backup::Params</innerclass>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>numInputs</declname>
+        <defname>numInputs</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>numOutputs</declname>
+        <defname>numOutputs</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_indie_neat_1_1_backup_1abbfe64d4c3d12b9192c5d2ccae2e485f" prot="private" static="no">
+        <name>ParamsType</name>
+        <enumvalue id="class_indie_neat_1_1_backup_1abbfe64d4c3d12b9192c5d2ccae2e485fafd3e4ece78a7d422280d5ed379482229" prot="private">
+          <name>DOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_indie_neat_1_1_backup_1abbfe64d4c3d12b9192c5d2ccae2e485faaf36b47f395cd01f48b8fc1013665054" prot="private">
+          <name>UNSIGNED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="59" column="1" bodyfile="src/Backup.hpp" bodystart="58" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_backup_1a49d5c1fc4e547755674313da104689fe" prot="private" static="yes" mutable="no">
+        <type>std::array&lt; Parameters, 17 &gt;</type>
+        <definition>std::array&lt;Parameters, 17&gt; IndieNeat::Backup&lt; numInputs, numOutputs &gt;::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="70" column="1" bodyfile="src/Backup.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_backup_1af212c93b5c39d5d6e16144bb87b46afa" prot="private" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IndieNeat::Backup&lt; numInputs, numOutputs &gt;::_directory</definition>
+        <argsstring></argsstring>
+        <name>_directory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="490" column="1" bodyfile="src/Backup.hpp" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_backup_1a46650b8c44a73c5b15bfaf2a5e5141f4" prot="private" static="yes" mutable="no">
+        <type>std::string const</type>
+        <definition>std::string const IndieNeat::Backup&lt; numInputs, numOutputs &gt;::PARAMS_FILE</definition>
+        <argsstring></argsstring>
+        <name>PARAMS_FILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="491" column="1" bodyfile="src/Backup.hpp" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a3a64ce2dc811de936afb675cd5ad6c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Backup</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Backup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a773e9e13579a40543ca31ceac3c21ba2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IndieNeat::Backup&lt; numInputs, numOutputs &gt;::saveParams</definition>
+        <argsstring>(NeatEngine&lt; numInputs, numOutputs &gt; const &amp;engine)</argsstring>
+        <name>saveParams</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_neat_engine" kindref="compound">NeatEngine</ref>&lt; numInputs, numOutputs &gt; const &amp;</type>
+          <declname>engine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="73" column="1" bodyfile="src/Backup.hpp" bodystart="73" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a2b8db0837a930e491f692c7b9fccbccd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IndieNeat::Backup&lt; numInputs, numOutputs &gt;::encodeGenome</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; &amp;genome, std::string &amp;saver)</argsstring>
+        <name>encodeGenome</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>saver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="153" column="1" bodyfile="src/Backup.hpp" bodystart="153" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1aacb848f2c3955f1c6354a5153efe224b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IndieNeat::Backup&lt; numInputs, numOutputs &gt;::encodeGenome</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; &amp;genome, std::string const &amp;filename)</argsstring>
+        <name>encodeGenome</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="166" column="1" bodyfile="src/Backup.hpp" bodystart="166" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1ac58b81e59e3781d9eb1c3d408380c6db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IndieNeat::Backup&lt; numInputs, numOutputs &gt;::decodeGenome</definition>
+        <argsstring>(PackedGenome &amp;genome, std::string const &amp;filename)</argsstring>
+        <name>decodeGenome</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_backup_1_1_packed_genome" kindref="compound">PackedGenome</ref> &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="316" column="1" bodyfile="src/Backup.hpp" bodystart="316" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a817b72045a454b966f9a4a45d5a61e31" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>static std::string const&amp; IndieNeat::Backup&lt; numInputs, numOutputs &gt;::getDirectory</definition>
+        <argsstring>()</argsstring>
+        <name>getDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="338" column="1" bodyfile="src/Backup.hpp" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1ab30a6d7996f11c8a13bc1c9489a10e29" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IndieNeat::Backup&lt; numInputs, numOutputs &gt;::setDirectory</definition>
+        <argsstring>(std::string const &amp;dir)</argsstring>
+        <name>setDirectory</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="343" column="1" bodyfile="src/Backup.hpp" bodystart="343" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a3a6daec23ae5c450d66da35bd13e3c6f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IndieNeat::Backup&lt; numInputs, numOutputs &gt;::getParams</definition>
+        <argsstring>(Params &amp;params)</argsstring>
+        <name>getParams</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_backup_1_1_params" kindref="compound">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="449" column="1" bodyfile="src/Backup.hpp" bodystart="449" bodyend="487"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a0289e64d7f4740e831214b61cc3717bf" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IndieNeat::Backup&lt; numInputs, numOutputs &gt;::saveGenes</definition>
+        <argsstring>(std::ostream &amp;file, Genotype&lt; numInputs, numOutputs &gt; const &amp;genome)</argsstring>
+        <name>saveGenes</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; const &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="106" column="1" bodyfile="src/Backup.hpp" bodystart="106" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a841efcac48ddd91b1ebbc6b1e46a9a5b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IndieNeat::Backup&lt; numInputs, numOutputs &gt;::saveNodes</definition>
+        <argsstring>(std::ostream &amp;file, Genotype&lt; numInputs, numOutputs &gt; &amp;genome)</argsstring>
+        <name>saveNodes</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="130" column="1" bodyfile="src/Backup.hpp" bodystart="130" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a8087ea87b5333dee4fd277bf0459ec75" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IndieNeat::Backup&lt; numInputs, numOutputs &gt;::getNNAndFitness</definition>
+        <argsstring>(PackedGenome &amp;genome, std::string const &amp;file, unsigned &amp;i)</argsstring>
+        <name>getNNAndFitness</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_backup_1_1_packed_genome" kindref="compound">PackedGenome</ref> &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="187" column="1" bodyfile="src/Backup.hpp" bodystart="187" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1ac44ba24d6ad27030b3cc1baac8d2d1a8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string IndieNeat::Backup&lt; numInputs, numOutputs &gt;::getParam</definition>
+        <argsstring>(std::string const &amp;file, unsigned &amp;i)</argsstring>
+        <name>getParam</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="214" column="1" bodyfile="src/Backup.hpp" bodystart="214" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a3fc8dbc4443688c77640811ce4cd2e35" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IndieNeat::Backup&lt; numInputs, numOutputs &gt;::getGenes</definition>
+        <argsstring>(PackedGenome &amp;genome, std::string const &amp;file, unsigned &amp;i)</argsstring>
+        <name>getGenes</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_backup_1_1_packed_genome" kindref="compound">PackedGenome</ref> &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="226" column="1" bodyfile="src/Backup.hpp" bodystart="226" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1ac7f790694292dd8979923447a50f434d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool IndieNeat::Backup&lt; numInputs, numOutputs &gt;::getNodes</definition>
+        <argsstring>(PackedGenome &amp;genome, std::string const &amp;file, unsigned &amp;i)</argsstring>
+        <name>getNodes</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_backup_1_1_packed_genome" kindref="compound">PackedGenome</ref> &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="273" column="1" bodyfile="src/Backup.hpp" bodystart="273" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a43708e314f8e8233c275fd0f59380ad4" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IndieNeat::Backup&lt; numInputs, numOutputs &gt;::getParameters</definition>
+        <argsstring>(std::string const &amp;str, std::vector&lt; std::string &gt; &amp;params)</argsstring>
+        <name>getParameters</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="359" column="1" bodyfile="src/Backup.hpp" bodystart="359" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a6acb2bf7103aca0a0b7c88313e38e428" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void IndieNeat::Backup&lt; numInputs, numOutputs &gt;::fillElemByOffset</definition>
+        <argsstring>(unsigned i, std::vector&lt; std::string &gt; const &amp;value, Params &amp;params)</argsstring>
+        <name>fillElemByOffset</name>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_backup_1_1_params" kindref="compound">Params</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="385" column="1" bodyfile="src/Backup.hpp" bodystart="385" bodyend="446"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a6cd17f02f530df6bf7af936cd0c4d64e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string IndieNeat::Backup&lt; 2, 2 &gt;::_directory</definition>
+        <argsstring></argsstring>
+        <name>_directory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.cpp" line="5" column="1" bodyfile="src/Backup.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a9616e11fc26514aff4bc0f2b2caaa359" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string const</type>
+        <definition>std::string const IndieNeat::Backup&lt; 2, 2 &gt;::PARAMS_FILE</definition>
+        <argsstring></argsstring>
+        <name>PARAMS_FILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.cpp" line="6" column="1" bodyfile="src/Backup.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_backup_1a7656e9e1906db20dd0815b0283d21d79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::array&lt; <ref refid="class_indie_neat_1_1_backup" kindref="compound">Backup</ref>&lt; 2, 2 &gt;::Parameters, 17 &gt;</type>
+        <definition>std::array&lt; Backup&lt; 2, 2 &gt;::Parameters, 17 &gt; IndieNeat::Backup&lt; 2, 2 &gt;::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.cpp" line="7" column="1" bodyfile="src/Backup.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Backup.hpp" line="23" column="1" bodyfile="src/Backup.hpp" bodystart="22" bodyend="493"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_backup_1af212c93b5c39d5d6e16144bb87b46afa" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>_directory</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a6cd17f02f530df6bf7af936cd0c4d64e" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>_directory</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a3a64ce2dc811de936afb675cd5ad6c04" prot="public" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>Backup</name></member>
+      <member refid="class_indie_neat_1_1_backup_1ac58b81e59e3781d9eb1c3d408380c6db" prot="public" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>decodeGenome</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a2b8db0837a930e491f692c7b9fccbccd" prot="public" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>encodeGenome</name></member>
+      <member refid="class_indie_neat_1_1_backup_1aacb848f2c3955f1c6354a5153efe224b" prot="public" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>encodeGenome</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a6acb2bf7103aca0a0b7c88313e38e428" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>fillElemByOffset</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a817b72045a454b966f9a4a45d5a61e31" prot="public" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>getDirectory</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a3fc8dbc4443688c77640811ce4cd2e35" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>getGenes</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a8087ea87b5333dee4fd277bf0459ec75" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>getNNAndFitness</name></member>
+      <member refid="class_indie_neat_1_1_backup_1ac7f790694292dd8979923447a50f434d" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>getNodes</name></member>
+      <member refid="class_indie_neat_1_1_backup_1ac44ba24d6ad27030b3cc1baac8d2d1a8" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>getParam</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a43708e314f8e8233c275fd0f59380ad4" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>getParameters</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a3a6daec23ae5c450d66da35bd13e3c6f" prot="public" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>getParams</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a49d5c1fc4e547755674313da104689fe" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>parameters</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a7656e9e1906db20dd0815b0283d21d79" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>parameters</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a46650b8c44a73c5b15bfaf2a5e5141f4" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>PARAMS_FILE</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a9616e11fc26514aff4bc0f2b2caaa359" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>PARAMS_FILE</name></member>
+      <member refid="class_indie_neat_1_1_backup_1abbfe64d4c3d12b9192c5d2ccae2e485f" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>ParamsType</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a0289e64d7f4740e831214b61cc3717bf" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>saveGenes</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a841efcac48ddd91b1ebbc6b1e46a9a5b" prot="private" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>saveNodes</name></member>
+      <member refid="class_indie_neat_1_1_backup_1a773e9e13579a40543ca31ceac3c21ba2" prot="public" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>saveParams</name></member>
+      <member refid="class_indie_neat_1_1_backup_1ab30a6d7996f11c8a13bc1c9489a10e29" prot="public" virt="non-virtual"><scope>IndieNeat::Backup</scope><name>setDirectory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_population_1_1_species" kind="class" language="C++" prot="public">
+    <compoundname>IndieNeat::Population::Species</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_population_1_1_species_1a7ce5d55357c1e057b25a6ba17f45ef26" prot="private" static="no" mutable="no">
+        <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt;</type>
+        <definition>Genotype&lt;numInputs, numOutputs&gt; IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::_ref</definition>
+        <argsstring></argsstring>
+        <name>_ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="347" column="1" bodyfile="src/Population.hpp" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_population_1_1_species_1a320daf35a8a2ff26e4da8b7292077067" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::_stagnantGeneration</definition>
+        <argsstring></argsstring>
+        <name>_stagnantGeneration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="348" column="1" bodyfile="src/Population.hpp" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_population_1_1_species_1a99168fb58fc68cd1e56f41ee75ceb942" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::_maxFitness</definition>
+        <argsstring></argsstring>
+        <name>_maxFitness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="349" column="1" bodyfile="src/Population.hpp" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_population_1_1_species_1a7d351b1487a0a95741108e682248315b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; * &gt;</type>
+        <definition>std::vector&lt;Genotype&lt;numInputs, numOutputs&gt; *&gt; IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::_genomes</definition>
+        <argsstring></argsstring>
+        <name>_genomes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="350" column="1" bodyfile="src/Population.hpp" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1ac8db714f2bad8eda3ccafb2c07c249eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::Species</definition>
+        <argsstring>(void)</argsstring>
+        <name>Species</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="137" column="1" bodyfile="src/Population.hpp" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a87fcfdfb63a564672b8394470f674982" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::Species</definition>
+        <argsstring>(Species const &amp;copy)</argsstring>
+        <name>Species</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_population_1_1_species" kindref="compound">Species</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="139" column="1" bodyfile="src/Population.hpp" bodystart="139" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a948ab3d064c64528d8d39c44aa09855f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::~Species</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Species</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="146" column="1" bodyfile="src/Population.hpp" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1ad3529760d9ef0f297b10848bee5dd82e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_indie_neat_1_1_population_1_1_species" kindref="compound">Species</ref> &amp;</type>
+        <definition>Species&amp; IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::operator=</definition>
+        <argsstring>(Species const &amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_population_1_1_species" kindref="compound">Species</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="148" column="1" bodyfile="src/Population.hpp" bodystart="148" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a927a6e3fbcadf1fd8dc70e0572f45397" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::init</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; &amp;genome)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="159" column="1" bodyfile="src/Population.hpp" bodystart="159" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1ad6237428aa0d689398451c6eed27058c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::destroy</definition>
+        <argsstring>(void)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="167" column="1" bodyfile="src/Population.hpp" bodystart="167" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1addd4db6f02889048d78cb230bc6be9e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; * &gt; &amp;</type>
+        <definition>std::vector&lt;Genotype&lt;numInputs, numOutputs&gt; *&gt;&amp; IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::Genomes</definition>
+        <argsstring>(void)</argsstring>
+        <name>Genomes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="174" column="1" bodyfile="src/Population.hpp" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a98fafc1451a505d95963e0dc2f4555f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+        <definition>Genotype&lt;numInputs, numOutputs&gt;&amp; IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::Reference</definition>
+        <argsstring>(void)</argsstring>
+        <name>Reference</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="179" column="1" bodyfile="src/Population.hpp" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a51a1a704e3ba31f6b58cbc0e042c404a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::adjustFitness</definition>
+        <argsstring>(double distanceThreshold, unsigned int maxGenomeSize)</argsstring>
+        <name>adjustFitness</name>
+        <param>
+          <type>double</type>
+          <declname>distanceThreshold</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>maxGenomeSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="184" column="1" bodyfile="src/Population.hpp" bodystart="184" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a4569503da7966e73bcefaf19b08ca1b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::numberOfNotEvaluated</definition>
+        <argsstring>(void) const</argsstring>
+        <name>numberOfNotEvaluated</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="201" column="1" bodyfile="src/Population.hpp" bodystart="201" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a7deb0c402c6876ed15e3c8d07d7a458c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::numberOfEvaluated</definition>
+        <argsstring>(void) const</argsstring>
+        <name>numberOfEvaluated</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="213" column="1" bodyfile="src/Population.hpp" bodystart="213" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a24ef0cd279f380c2d7cf74cd5fdb4622" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; *</type>
+        <definition>Genotype&lt;numInputs, numOutputs&gt;* IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::getRandomGenome</definition>
+        <argsstring>(void)</argsstring>
+        <name>getRandomGenome</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="225" column="1" bodyfile="src/Population.hpp" bodystart="225" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1abd867d0cff4a1f6fd8c2c5dd93cfce0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::reproduce</definition>
+        <argsstring>(std::vector&lt; Genotype&lt; numInputs, numOutputs &gt; *&gt; &amp;childs, unsigned int numOfChilds, double speciesKeepingRate, double interSpeciesMatingRate, Species &amp;specie)</argsstring>
+        <name>reproduce</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; *&gt; &amp;</type>
+          <declname>childs</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>numOfChilds</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speciesKeepingRate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>interSpeciesMatingRate</declname>
+        </param>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_population_1_1_species" kindref="compound">Species</ref> &amp;</type>
+          <declname>specie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="234" column="1" bodyfile="src/Population.hpp" bodystart="234" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a58d4063013f4370ee63d18e331aa8a95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::evaluate</definition>
+        <argsstring>(std::vector&lt; Genotype&lt; numInputs, numOutputs &gt; * &gt; &amp;buffer, unsigned int numberOfGenomes)</argsstring>
+        <name>evaluate</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; * &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>numberOfGenomes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="312" column="1" bodyfile="src/Population.hpp" bodystart="312" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a5119a841f2653f5260d49012a0e25455" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::setStagnantGeneration</definition>
+        <argsstring>(unsigned int gen)</argsstring>
+        <name>setStagnantGeneration</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>gen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="326" column="1" bodyfile="src/Population.hpp" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a9c3ac1e5c035e05038b6e5e9494207c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::getStagnantGeneration</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getStagnantGeneration</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="331" column="1" bodyfile="src/Population.hpp" bodystart="331" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a894ac24c374fb20f3413642568121a74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::getStagnantFitness</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getStagnantFitness</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="336" column="1" bodyfile="src/Population.hpp" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_population_1_1_species_1a619f58d475012bc8bce9a52dc3233b43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Population&lt; numInputs, numOutputs &gt;::Species::setStagnantFitness</definition>
+        <argsstring>(double fit)</argsstring>
+        <name>setStagnantFitness</name>
+        <param>
+          <type>double</type>
+          <declname>fit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="341" column="1" bodyfile="src/Population.hpp" bodystart="341" bodyend="344"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Population.hpp" line="135" column="1" bodyfile="src/Population.hpp" bodystart="134" bodyend="351"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a7d351b1487a0a95741108e682248315b" prot="private" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>_genomes</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a99168fb58fc68cd1e56f41ee75ceb942" prot="private" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>_maxFitness</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a7ce5d55357c1e057b25a6ba17f45ef26" prot="private" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>_ref</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a320daf35a8a2ff26e4da8b7292077067" prot="private" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>_stagnantGeneration</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a51a1a704e3ba31f6b58cbc0e042c404a" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>adjustFitness</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1ad6237428aa0d689398451c6eed27058c" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>destroy</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a58d4063013f4370ee63d18e331aa8a95" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>evaluate</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1addd4db6f02889048d78cb230bc6be9e7" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>Genomes</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a24ef0cd279f380c2d7cf74cd5fdb4622" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>getRandomGenome</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a894ac24c374fb20f3413642568121a74" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>getStagnantFitness</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a9c3ac1e5c035e05038b6e5e9494207c3" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>getStagnantGeneration</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a927a6e3fbcadf1fd8dc70e0572f45397" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>init</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a7deb0c402c6876ed15e3c8d07d7a458c" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>numberOfEvaluated</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a4569503da7966e73bcefaf19b08ca1b9" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>numberOfNotEvaluated</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1ad3529760d9ef0f297b10848bee5dd82e" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>operator=</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a98fafc1451a505d95963e0dc2f4555f8" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>Reference</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1abd867d0cff4a1f6fd8c2c5dd93cfce0d" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>reproduce</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a619f58d475012bc8bce9a52dc3233b43" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>setStagnantFitness</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a5119a841f2653f5260d49012a0e25455" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>setStagnantGeneration</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1ac8db714f2bad8eda3ccafb2c07c249eb" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>Species</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a87fcfdfb63a564672b8394470f674982" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>Species</name></member>
+      <member refid="class_indie_neat_1_1_population_1_1_species_1a948ab3d064c64528d8d39c44aa09855f" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Species</scope><name>~Species</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

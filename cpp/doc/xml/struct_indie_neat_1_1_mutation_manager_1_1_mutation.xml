@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_indie_neat_1_1_mutation_manager_1_1_mutation" kind="struct" language="C++" prot="public">
+    <compoundname>IndieNeat::MutationManager::Mutation</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutation_manager_1_1_mutation_1a0a1d87a46b4496068a605d4a90642416" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::MutationManager::Mutation::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MutationManager.hh" line="19" column="1" bodyfile="src/MutationManager.hh" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutation_manager_1_1_mutation_1aeaf66cca2fd67b42eed52dc19e6ec0bb" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::MutationManager::Mutation::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MutationManager.hh" line="20" column="1" bodyfile="src/MutationManager.hh" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutation_manager_1_1_mutation_1a651ca54d21cc4859ee42349eedd9fafe" prot="public" static="no" mutable="no">
+        <type>MutationType</type>
+        <definition>MutationType IndieNeat::MutationManager::Mutation::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MutationManager.hh" line="21" column="1" bodyfile="src/MutationManager.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_mutation_manager_1_1_mutation_1aac7f68b32f823fbe57ee270e89397ab6" prot="public" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long IndieNeat::MutationManager::Mutation::innov</definition>
+        <argsstring></argsstring>
+        <name>innov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MutationManager.hh" line="22" column="1" bodyfile="src/MutationManager.hh" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/MutationManager.hh" line="18" column="1" bodyfile="src/MutationManager.hh" bodystart="17" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct_indie_neat_1_1_mutation_manager_1_1_mutation_1aac7f68b32f823fbe57ee270e89397ab6" prot="public" virt="non-virtual"><scope>IndieNeat::MutationManager::Mutation</scope><name>innov</name></member>
+      <member refid="struct_indie_neat_1_1_mutation_manager_1_1_mutation_1a0a1d87a46b4496068a605d4a90642416" prot="public" virt="non-virtual"><scope>IndieNeat::MutationManager::Mutation</scope><name>input</name></member>
+      <member refid="struct_indie_neat_1_1_mutation_manager_1_1_mutation_1aeaf66cca2fd67b42eed52dc19e6ec0bb" prot="public" virt="non-virtual"><scope>IndieNeat::MutationManager::Mutation</scope><name>output</name></member>
+      <member refid="struct_indie_neat_1_1_mutation_manager_1_1_mutation_1a651ca54d21cc4859ee42349eedd9fafe" prot="public" virt="non-virtual"><scope>IndieNeat::MutationManager::Mutation</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

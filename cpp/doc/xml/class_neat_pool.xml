@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_neat_pool" kind="class" language="C++" prot="public">
+    <compoundname>NeatPool</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>typename ...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_neat_pool_1a24ae35e1d204aec7d08d26506b79b3ce" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T * &gt;</type>
+        <definition>std::vector&lt;T *&gt; NeatPool&lt; T, Args &gt;::_pool</definition>
+        <argsstring></argsstring>
+        <name>_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="73" column="1" bodyfile="src/NeatPool.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_neat_pool_1a3322bd7360e1b090ac04db742851daba" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned NeatPool&lt; T, Args &gt;::_idx</definition>
+        <argsstring></argsstring>
+        <name>_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="74" column="1" bodyfile="src/NeatPool.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_neat_pool_1a54cf587ef989af545ebc96bdfc99b426" prot="private" static="no" mutable="no">
+        <type>std::tuple&lt; Args ... &gt;</type>
+        <definition>std::tuple&lt;Args ...&gt; NeatPool&lt; T, Args &gt;::_args</definition>
+        <argsstring></argsstring>
+        <name>_args</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="75" column="1" bodyfile="src/NeatPool.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_neat_pool_1a353249de87ce5ba062f4634644994e5f" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex NeatPool&lt; T, Args &gt;::_poolMutex</definition>
+        <argsstring></argsstring>
+        <name>_poolMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="76" column="1" bodyfile="src/NeatPool.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_neat_pool_1a6a7ed494b07c64f5ca0fa12534527b8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NeatPool&lt; T, Args &gt;::NeatPool</definition>
+        <argsstring>(void)</argsstring>
+        <name>NeatPool</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="14" column="1" bodyfile="src/NeatPool.hpp" bodystart="14" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neat_pool_1a3f05eb4f5c7dcdbc6cc30e63374ca925" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NeatPool&lt; T, Args &gt;::NeatPool</definition>
+        <argsstring>(unsigned nbElements, Args ... args)</argsstring>
+        <name>NeatPool</name>
+        <param>
+          <type>unsigned</type>
+          <declname>nbElements</declname>
+        </param>
+        <param>
+          <type>Args ...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="17" column="1" bodyfile="src/NeatPool.hpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neat_pool_1abaae97ca76236acdd3c2cc4f77da2f62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NeatPool&lt; T, Args &gt;::init</definition>
+        <argsstring>(unsigned nbElements, Args ... args)</argsstring>
+        <name>init</name>
+        <param>
+          <type>unsigned</type>
+          <declname>nbElements</declname>
+        </param>
+        <param>
+          <type>Args ...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="24" column="1" bodyfile="src/NeatPool.hpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neat_pool_1ac787d58e31027eee894a87ad2935a822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned ...</type>
+            <declname>idx</declname>
+            <defname>idx</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NeatPool&lt; T, Args &gt;::buildNewObject</definition>
+        <argsstring>(std::integer_sequence&lt; unsigned, idx ... &gt;)</argsstring>
+        <name>buildNewObject</name>
+        <param>
+          <type>std::integer_sequence&lt; unsigned, idx ... &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="31" column="1" bodyfile="src/NeatPool.hpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neat_pool_1a0cc52b8bf46f777543c536ffb321755e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* NeatPool&lt; T, Args &gt;::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="36" column="1" bodyfile="src/NeatPool.hpp" bodystart="36" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neat_pool_1aa649761480b7c3e605a1c5eba6a2423c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NeatPool&lt; T, Args &gt;::operator&gt;&gt;</definition>
+        <argsstring>(T *&amp;dest)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>T *&amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="51" column="1" bodyfile="src/NeatPool.hpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neat_pool_1a517c154eaa25f73f33265622ee4a90af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NeatPool&lt; T, Args &gt;::operator&lt;&lt;</definition>
+        <argsstring>(T *water)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>T *</type>
+          <declname>water</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="56" column="1" bodyfile="src/NeatPool.hpp" bodystart="56" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_neat_pool_1ac7c462eab2a99dfc8e5afd7a083e9590" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual NeatPool&lt; T, Args &gt;::~NeatPool</definition>
+        <argsstring>()</argsstring>
+        <name>~NeatPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/NeatPool.hpp" line="66" column="1" bodyfile="src/NeatPool.hpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/NeatPool.hpp" line="12" column="1" bodyfile="src/NeatPool.hpp" bodystart="11" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_neat_pool_1a54cf587ef989af545ebc96bdfc99b426" prot="private" virt="non-virtual"><scope>NeatPool</scope><name>_args</name></member>
+      <member refid="class_neat_pool_1a3322bd7360e1b090ac04db742851daba" prot="private" virt="non-virtual"><scope>NeatPool</scope><name>_idx</name></member>
+      <member refid="class_neat_pool_1a24ae35e1d204aec7d08d26506b79b3ce" prot="private" virt="non-virtual"><scope>NeatPool</scope><name>_pool</name></member>
+      <member refid="class_neat_pool_1a353249de87ce5ba062f4634644994e5f" prot="private" virt="non-virtual"><scope>NeatPool</scope><name>_poolMutex</name></member>
+      <member refid="class_neat_pool_1ac787d58e31027eee894a87ad2935a822" prot="public" virt="non-virtual"><scope>NeatPool</scope><name>buildNewObject</name></member>
+      <member refid="class_neat_pool_1a0cc52b8bf46f777543c536ffb321755e" prot="public" virt="non-virtual"><scope>NeatPool</scope><name>get</name></member>
+      <member refid="class_neat_pool_1abaae97ca76236acdd3c2cc4f77da2f62" prot="public" virt="non-virtual"><scope>NeatPool</scope><name>init</name></member>
+      <member refid="class_neat_pool_1a6a7ed494b07c64f5ca0fa12534527b8c" prot="public" virt="non-virtual"><scope>NeatPool</scope><name>NeatPool</name></member>
+      <member refid="class_neat_pool_1a3f05eb4f5c7dcdbc6cc30e63374ca925" prot="public" virt="non-virtual"><scope>NeatPool</scope><name>NeatPool</name></member>
+      <member refid="class_neat_pool_1a517c154eaa25f73f33265622ee4a90af" prot="public" virt="non-virtual"><scope>NeatPool</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_neat_pool_1aa649761480b7c3e605a1c5eba6a2423c" prot="public" virt="non-virtual"><scope>NeatPool</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_neat_pool_1ac7c462eab2a99dfc8e5afd7a083e9590" prot="public" virt="virtual"><scope>NeatPool</scope><name>~NeatPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

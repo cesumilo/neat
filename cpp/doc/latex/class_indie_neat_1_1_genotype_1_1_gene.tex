@@ -1,0 +1,56 @@
+\hypertarget{class_indie_neat_1_1_genotype_1_1_gene}{}\section{Indie\+Neat\+:\+:Genotype$<$ num\+Inputs, num\+Outputs $>$\+:\+:Gene Class Reference}
+\label{class_indie_neat_1_1_genotype_1_1_gene}\index{Indie\+Neat\+::\+Genotype$<$ num\+Inputs, num\+Outputs $>$\+::\+Gene@{Indie\+Neat\+::\+Genotype$<$ num\+Inputs, num\+Outputs $>$\+::\+Gene}}
+
+
+{\ttfamily \#include $<$Genotype.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_a71a4944914ec3297e96f576fb7e71dae}\label{class_indie_neat_1_1_genotype_1_1_gene_a71a4944914ec3297e96f576fb7e71dae}} 
+{\bfseries Gene} (unsigned int input, unsigned int output, long long innov, std\+::pair$<$ double, double $>$ const \&range)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_a1b1f01785939b796e2618404d25382cd}\label{class_indie_neat_1_1_genotype_1_1_gene_a1b1f01785939b796e2618404d25382cd}} 
+{\bfseries Gene} (unsigned int input, unsigned int output, long long innov, bool enabled, double weight)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_a94196bcc044ed7e9c3ac9372fe51a95e}\label{class_indie_neat_1_1_genotype_1_1_gene_a94196bcc044ed7e9c3ac9372fe51a95e}} 
+{\bfseries Gene} (\hyperlink{class_indie_neat_1_1_genotype_1_1_gene}{Gene} const \&copy)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_a10bf052f60f2fc95748db1ce1d45a839}\label{class_indie_neat_1_1_genotype_1_1_gene_a10bf052f60f2fc95748db1ce1d45a839}} 
+\hyperlink{class_indie_neat_1_1_genotype_1_1_gene}{Gene} \& {\bfseries operator=} (\hyperlink{class_indie_neat_1_1_genotype_1_1_gene}{Gene} const \&copy)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_a10816dbb01b1612f72ee896a365dc64d}\label{class_indie_neat_1_1_genotype_1_1_gene_a10816dbb01b1612f72ee896a365dc64d}} 
+void {\bfseries set\+Weight} (double weight)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_a21d12992bf1aaeac620d6080365f4b65}\label{class_indie_neat_1_1_genotype_1_1_gene_a21d12992bf1aaeac620d6080365f4b65}} 
+double {\bfseries get\+Weight} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_ae6c7def704522367a17e24f0b5d34a2d}\label{class_indie_neat_1_1_genotype_1_1_gene_ae6c7def704522367a17e24f0b5d34a2d}} 
+void {\bfseries toggle\+Enabled} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_ace348052be7366d9617f300e04432f6a}\label{class_indie_neat_1_1_genotype_1_1_gene_ace348052be7366d9617f300e04432f6a}} 
+void {\bfseries set\+Enabled} (bool enabled)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_a0500752fe9bccddb2e75b8624bb970fb}\label{class_indie_neat_1_1_genotype_1_1_gene_a0500752fe9bccddb2e75b8624bb970fb}} 
+bool {\bfseries is\+Enabled} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_a1bc8e6ee64605d55297b4e2be10750bd}\label{class_indie_neat_1_1_genotype_1_1_gene_a1bc8e6ee64605d55297b4e2be10750bd}} 
+long long {\bfseries get\+Ino} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_af2ada5b6314d0af72535a1770e4d20f1}\label{class_indie_neat_1_1_genotype_1_1_gene_af2ada5b6314d0af72535a1770e4d20f1}} 
+unsigned int {\bfseries Input} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_genotype_1_1_gene_a8533d25d547d637ca4ca78cba2c90aed}\label{class_indie_neat_1_1_genotype_1_1_gene_a8533d25d547d637ca4ca78cba2c90aed}} 
+unsigned int {\bfseries Output} (void) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$unsigned int num\+Inputs, unsigned int num\+Outputs$>$\newline
+class Indie\+Neat\+::\+Genotype$<$ num\+Inputs, num\+Outputs $>$\+::\+Gene}
+
+The class \hyperlink{class_indie_neat_1_1_genotype_1_1_gene}{Gene} contains all the information about a gene in the genome. With this class we can know where the gene is, between which \hyperlink{class_indie_neat_1_1_genotype_1_1_node}{Node}. We also know its innovation number, which is the rank of the gene creation. Finally, we have the current coefficient of the gene, which is the knowledge contained inside it. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Genotype.\+hpp\end{DoxyCompactItemize}

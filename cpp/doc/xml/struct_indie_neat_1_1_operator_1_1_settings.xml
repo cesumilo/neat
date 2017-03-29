@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_indie_neat_1_1_operator_1_1_settings" kind="struct" language="C++" prot="public">
+    <compoundname>IndieNeat::Operator::Settings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_indie_neat_1_1_operator_1_1_settings_1aeed191109e68d20a2a426de8aaae8549" prot="public" static="no" mutable="no">
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt;double, double&gt; IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Settings::weightRange</definition>
+        <argsstring></argsstring>
+        <name>weightRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="44" column="1" bodyfile="src/Operator.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_operator_1_1_settings_1ade01531239ad56b984fc1ba296965d07" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Settings::excessCoef</definition>
+        <argsstring></argsstring>
+        <name>excessCoef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="45" column="1" bodyfile="src/Operator.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_operator_1_1_settings_1a9bdd3801df3323d02268bffc4fd03b90" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Settings::disjointCoef</definition>
+        <argsstring></argsstring>
+        <name>disjointCoef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="46" column="1" bodyfile="src/Operator.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_operator_1_1_settings_1a7fb0853b84e3c7ff412f28b027918c48" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Settings::weightsAvgCoef</definition>
+        <argsstring></argsstring>
+        <name>weightsAvgCoef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="47" column="1" bodyfile="src/Operator.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_indie_neat_1_1_operator_1_1_settings_1a4b233063badae849df64761d203d9301" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Settings::Settings</definition>
+        <argsstring>(void)</argsstring>
+        <name>Settings</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="18" column="1" bodyfile="src/Operator.hpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_operator_1_1_settings_1abae993de1b2199df3dcaa49788e8b804" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Settings::Settings</definition>
+        <argsstring>(Settings const &amp;copy)</argsstring>
+        <name>Settings</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_operator_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="24" column="1" bodyfile="src/Operator.hpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_operator_1_1_settings_1a182aeeee642ad77703aac96c5af23323" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Settings::~Settings</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Settings</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="30" column="1" bodyfile="src/Operator.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_operator_1_1_settings_1a7e2a44df551648c656a6fdcac83a3d75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_indie_neat_1_1_operator_1_1_settings" kindref="compound">Settings</ref> &amp;</type>
+        <definition>Settings&amp; IndieNeat::Operator&lt; numInputs, numOutputs &gt;::Settings::operator=</definition>
+        <argsstring>(Settings const &amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_operator_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Operator.hpp" line="32" column="1" bodyfile="src/Operator.hpp" bodystart="32" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Operator.hpp" line="17" column="1" bodyfile="src/Operator.hpp" bodystart="16" bodyend="48"/>
+    <listofallmembers>
+      <member refid="struct_indie_neat_1_1_operator_1_1_settings_1a9bdd3801df3323d02268bffc4fd03b90" prot="public" virt="non-virtual"><scope>IndieNeat::Operator::Settings</scope><name>disjointCoef</name></member>
+      <member refid="struct_indie_neat_1_1_operator_1_1_settings_1ade01531239ad56b984fc1ba296965d07" prot="public" virt="non-virtual"><scope>IndieNeat::Operator::Settings</scope><name>excessCoef</name></member>
+      <member refid="struct_indie_neat_1_1_operator_1_1_settings_1a7e2a44df551648c656a6fdcac83a3d75" prot="public" virt="non-virtual"><scope>IndieNeat::Operator::Settings</scope><name>operator=</name></member>
+      <member refid="struct_indie_neat_1_1_operator_1_1_settings_1a4b233063badae849df64761d203d9301" prot="public" virt="non-virtual"><scope>IndieNeat::Operator::Settings</scope><name>Settings</name></member>
+      <member refid="struct_indie_neat_1_1_operator_1_1_settings_1abae993de1b2199df3dcaa49788e8b804" prot="public" virt="non-virtual"><scope>IndieNeat::Operator::Settings</scope><name>Settings</name></member>
+      <member refid="struct_indie_neat_1_1_operator_1_1_settings_1aeed191109e68d20a2a426de8aaae8549" prot="public" virt="non-virtual"><scope>IndieNeat::Operator::Settings</scope><name>weightRange</name></member>
+      <member refid="struct_indie_neat_1_1_operator_1_1_settings_1a7fb0853b84e3c7ff412f28b027918c48" prot="public" virt="non-virtual"><scope>IndieNeat::Operator::Settings</scope><name>weightsAvgCoef</name></member>
+      <member refid="struct_indie_neat_1_1_operator_1_1_settings_1a182aeeee642ad77703aac96c5af23323" prot="public" virt="non-virtual"><scope>IndieNeat::Operator::Settings</scope><name>~Settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_indie_neat_1_1_backup_1_1_packed_genome" kind="struct" language="C++" prot="public">
+    <compoundname>IndieNeat::Backup::PackedGenome</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_packed_genome_1a8fe278f6fa33061fc8c3bdf0484d582e" prot="public" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long IndieNeat::Backup&lt; numInputs, numOutputs &gt;::PackedGenome::numNodes</definition>
+        <argsstring></argsstring>
+        <name>numNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="51" column="1" bodyfile="src/Backup.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_packed_genome_1a4ccbe78013e1121f62e5f04cf3fc0273" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::PackedGenome::fitness</definition>
+        <argsstring></argsstring>
+        <name>fitness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="52" column="1" bodyfile="src/Backup.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_packed_genome_1a540728e0e897a51437f79eea85cf9d95" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; typename <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt;::Node * &gt;</type>
+        <definition>std::vector&lt;typename Genotype&lt;numInputs, numOutputs&gt;::Node *&gt; IndieNeat::Backup&lt; numInputs, numOutputs &gt;::PackedGenome::nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="53" column="1" bodyfile="src/Backup.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_packed_genome_1ad5bb9e15c7c9a81b2acc466e9434a4c2" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; typename <ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt;::Gene * &gt;</type>
+        <definition>std::vector&lt;typename Genotype&lt;numInputs, numOutputs&gt;::Gene *&gt; IndieNeat::Backup&lt; numInputs, numOutputs &gt;::PackedGenome::genes</definition>
+        <argsstring></argsstring>
+        <name>genes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="54" column="1" bodyfile="src/Backup.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Backup.hpp" line="50" column="1" bodyfile="src/Backup.hpp" bodystart="49" bodyend="55"/>
+    <listofallmembers>
+      <member refid="struct_indie_neat_1_1_backup_1_1_packed_genome_1a4ccbe78013e1121f62e5f04cf3fc0273" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::PackedGenome</scope><name>fitness</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_packed_genome_1ad5bb9e15c7c9a81b2acc466e9434a4c2" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::PackedGenome</scope><name>genes</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_packed_genome_1a540728e0e897a51437f79eea85cf9d95" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::PackedGenome</scope><name>nodes</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_packed_genome_1a8fe278f6fa33061fc8c3bdf0484d582e" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::PackedGenome</scope><name>numNodes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

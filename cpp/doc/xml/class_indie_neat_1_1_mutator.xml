@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_mutator" kind="class" language="C++" prot="public">
+    <compoundname>IndieNeat::Mutator</compoundname>
+    <innerclass refid="struct_indie_neat_1_1_mutator_1_1_settings" prot="public">IndieNeat::Mutator::Settings</innerclass>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>numInputs</declname>
+        <defname>numInputs</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>numOutputs</declname>
+        <defname>numOutputs</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_mutator_1af75d3dbfa3d88bb9221623d258812752" prot="private" static="yes" mutable="no">
+        <type><ref refid="struct_indie_neat_1_1_mutator_1_1_settings" kindref="compound">Settings</ref></type>
+        <definition>Mutator&lt; numInputs, numOutputs &gt;::Settings IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::_settings</definition>
+        <argsstring></argsstring>
+        <name>_settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="67" column="1" bodyfile="src/Mutator.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_mutator_1a014b3a1f3d263c29a592b3de860edfc7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Set</definition>
+        <argsstring>(Settings const &amp;)</argsstring>
+        <name>Set</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_mutator_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="58" column="1" bodyfile="src/Mutator.hpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_mutator_1ac05b3a048e9b0626aa0d40538ce8db4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::Mutate</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; &amp;genome)</argsstring>
+        <name>Mutate</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="59" column="1" bodyfile="src/Mutator.hpp" bodystart="80" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_mutator_1a0e112ee83b97b9f413a8392bbf1fcad1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::ApplyWeightsMutation</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; &amp;genome)</argsstring>
+        <name>ApplyWeightsMutation</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="62" column="1" bodyfile="src/Mutator.hpp" bodystart="95" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_mutator_1afcf08b0fac04f44096e2dbcda7a0d902" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::ApplyConnectionMutation</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; &amp;genome)</argsstring>
+        <name>ApplyConnectionMutation</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="63" column="1" bodyfile="src/Mutator.hpp" bodystart="113" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_mutator_1a63f4ae32ef4fb11d6e90a46076ea21be" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::Mutator&lt; numInputs, numOutputs &gt;::ApplyNodeMutation</definition>
+        <argsstring>(Genotype&lt; numInputs, numOutputs &gt; &amp;genome)</argsstring>
+        <name>ApplyNodeMutation</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_genotype" kindref="compound">Genotype</ref>&lt; numInputs, numOutputs &gt; &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mutator.hpp" line="64" column="1" bodyfile="src/Mutator.hpp" bodystart="149" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Mutator.hpp" line="12" column="1" bodyfile="src/Mutator.hpp" bodystart="11" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_mutator_1af75d3dbfa3d88bb9221623d258812752" prot="private" virt="non-virtual"><scope>IndieNeat::Mutator</scope><name>_settings</name></member>
+      <member refid="class_indie_neat_1_1_mutator_1afcf08b0fac04f44096e2dbcda7a0d902" prot="private" virt="non-virtual"><scope>IndieNeat::Mutator</scope><name>ApplyConnectionMutation</name></member>
+      <member refid="class_indie_neat_1_1_mutator_1a63f4ae32ef4fb11d6e90a46076ea21be" prot="private" virt="non-virtual"><scope>IndieNeat::Mutator</scope><name>ApplyNodeMutation</name></member>
+      <member refid="class_indie_neat_1_1_mutator_1a0e112ee83b97b9f413a8392bbf1fcad1" prot="private" virt="non-virtual"><scope>IndieNeat::Mutator</scope><name>ApplyWeightsMutation</name></member>
+      <member refid="class_indie_neat_1_1_mutator_1ac05b3a048e9b0626aa0d40538ce8db4c" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator</scope><name>Mutate</name></member>
+      <member refid="class_indie_neat_1_1_mutator_1a014b3a1f3d263c29a592b3de860edfc7" prot="public" virt="non-virtual"><scope>IndieNeat::Mutator</scope><name>Set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

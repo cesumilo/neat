@@ -1,0 +1,151 @@
+\hypertarget{class_indie_neat_1_1_neat_engine}{}\section{Indie\+Neat\+:\+:Neat\+Engine$<$ num\+Inputs, num\+Outputs $>$ Class Template Reference}
+\label{class_indie_neat_1_1_neat_engine}\index{Indie\+Neat\+::\+Neat\+Engine$<$ num\+Inputs, num\+Outputs $>$@{Indie\+Neat\+::\+Neat\+Engine$<$ num\+Inputs, num\+Outputs $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a5d76888dd3cea3a462af394483f1cc6e}\label{class_indie_neat_1_1_neat_engine_a5d76888dd3cea3a462af394483f1cc6e}} 
+void {\bfseries init} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_abd2f03a971452369f1bfe12898911ce8}\label{class_indie_neat_1_1_neat_engine_abd2f03a971452369f1bfe12898911ce8}} 
+void {\bfseries evaluate} (std\+::vector$<$ typename \hyperlink{class_indie_neat_1_1_population}{Population}$<$ num\+Inputs, num\+Outputs $>$\+::Genome\+Container $\ast$$>$ \&buffer, unsigned int number\+Of\+Genomes)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a76332206d1a2a5bc57142f4175bee100}\label{class_indie_neat_1_1_neat_engine_a76332206d1a2a5bc57142f4175bee100}} 
+void {\bfseries push\+Score} (std\+::vector$<$ typename \hyperlink{class_indie_neat_1_1_population}{Population}$<$ num\+Inputs, num\+Outputs $>$\+::Genome\+Score $\ast$$>$ const \&scores)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a34cb78a2be59c9d8a35b0abe2cf4910d}\label{class_indie_neat_1_1_neat_engine_a34cb78a2be59c9d8a35b0abe2cf4910d}} 
+double {\bfseries get\+Best\+Fitness} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a3b75e3f1146a21e017dfc06d9bfd0d42}\label{class_indie_neat_1_1_neat_engine_a3b75e3f1146a21e017dfc06d9bfd0d42}} 
+\hyperlink{class_indie_neat_1_1_genotype}{Genotype}$<$ num\+Inputs, num\+Outputs $>$ const  \& {\bfseries get\+Best\+Genome} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a9e61d72e52fbffca74e52ab84d99b4cb}\label{class_indie_neat_1_1_neat_engine_a9e61d72e52fbffca74e52ab84d99b4cb}} 
+void {\bfseries set\+Population\+Size} (unsigned int size)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a7f50069ece57d11e8f3f281c3f455c0e}\label{class_indie_neat_1_1_neat_engine_a7f50069ece57d11e8f3f281c3f455c0e}} 
+void {\bfseries set\+Distance\+Threshold} (double threshold)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_aa6432f4ed608efa054fdb7294a6d2854}\label{class_indie_neat_1_1_neat_engine_aa6432f4ed608efa054fdb7294a6d2854}} 
+void {\bfseries set\+Max\+Stagnant\+Generation} (unsigned int number)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_aff67e5c00a7bbe4bb7eeeb1e99dd4115}\label{class_indie_neat_1_1_neat_engine_aff67e5c00a7bbe4bb7eeeb1e99dd4115}} 
+void {\bfseries set\+Offsprings\+Rate} (double rate)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a02be0b783551b649882aff2ffa5823fb}\label{class_indie_neat_1_1_neat_engine_a02be0b783551b649882aff2ffa5823fb}} 
+void {\bfseries set\+Weight\+Mutation\+Probability} (double rate)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a68f7f595180a3d663263209fd80123e1}\label{class_indie_neat_1_1_neat_engine_a68f7f595180a3d663263209fd80123e1}} 
+void {\bfseries set\+Inter\+Species\+Mating\+Rate} (double rate)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_ade9503fe02b49925dd50ecb1c3acec3e}\label{class_indie_neat_1_1_neat_engine_ade9503fe02b49925dd50ecb1c3acec3e}} 
+void {\bfseries set\+Species\+Keeping\+Rate} (double rate)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a60dda8952c92be48a6c8e3f3ec6648d1}\label{class_indie_neat_1_1_neat_engine_a60dda8952c92be48a6c8e3f3ec6648d1}} 
+void {\bfseries set\+Default\+Species\+Pool\+Size} (unsigned int size)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a7236c7c66a428cf33a2e63a79b843b64}\label{class_indie_neat_1_1_neat_engine_a7236c7c66a428cf33a2e63a79b843b64}} 
+void {\bfseries set\+Default\+Weight\+Range} (std\+::pair$<$ double, double $>$ const \&range)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a4bab2c61316334e721f216a9d45608a2}\label{class_indie_neat_1_1_neat_engine_a4bab2c61316334e721f216a9d45608a2}} 
+void {\bfseries set\+Default\+Perturbation\+Range} (std\+::pair$<$ double, double $>$ const \&range)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a4c507ac8284824d7c5ccfbecca0b1e98}\label{class_indie_neat_1_1_neat_engine_a4c507ac8284824d7c5ccfbecca0b1e98}} 
+void {\bfseries set\+Expected\+Fitness} (double expected)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a7aa454beb8823264adeae2656b335b20}\label{class_indie_neat_1_1_neat_engine_a7aa454beb8823264adeae2656b335b20}} 
+void {\bfseries set\+Maximum\+Generation} (unsigned int size)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a9cb2269c8fff209a617c1d4ec837651a}\label{class_indie_neat_1_1_neat_engine_a9cb2269c8fff209a617c1d4ec837651a}} 
+void {\bfseries set\+Random\+Weight\+Probability} (double prob)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_adb60239f711d8d071a7d673684a890d9}\label{class_indie_neat_1_1_neat_engine_adb60239f711d8d071a7d673684a890d9}} 
+void {\bfseries set\+Add\+Connection\+Probability} (double prob)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a33e833e45e4f5a8214fc859f011ad8f1}\label{class_indie_neat_1_1_neat_engine_a33e833e45e4f5a8214fc859f011ad8f1}} 
+void {\bfseries set\+Add\+Neuron\+Probability} (double prob)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a76065c599b1d02d8dab89285f145dfc3}\label{class_indie_neat_1_1_neat_engine_a76065c599b1d02d8dab89285f145dfc3}} 
+void {\bfseries set\+Excess\+Coefficient} (double coef)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_af4df98655136f5aeb4fad1099ac723be}\label{class_indie_neat_1_1_neat_engine_af4df98655136f5aeb4fad1099ac723be}} 
+void {\bfseries set\+Disjoint\+Coefficient} (double coef)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a3d32d44a1785f5ee6f12037221370281}\label{class_indie_neat_1_1_neat_engine_a3d32d44a1785f5ee6f12037221370281}} 
+void {\bfseries set\+Weight\+Average\+Coefficient} (double coef)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_aa26d6e65f052cac7c8b5d2372af20ec3}\label{class_indie_neat_1_1_neat_engine_aa26d6e65f052cac7c8b5d2372af20ec3}} 
+unsigned int {\bfseries get\+Population\+Size} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_ac77e196e0572c01b2b8d916a6559526a}\label{class_indie_neat_1_1_neat_engine_ac77e196e0572c01b2b8d916a6559526a}} 
+double {\bfseries get\+Distance\+Threshold} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_abc5e25d6aef01cf8b3e91b2a4de00264}\label{class_indie_neat_1_1_neat_engine_abc5e25d6aef01cf8b3e91b2a4de00264}} 
+unsigned int {\bfseries get\+Max\+Stagnant\+Generation} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a5264ee8f3af5921c2c8273e11423ea8a}\label{class_indie_neat_1_1_neat_engine_a5264ee8f3af5921c2c8273e11423ea8a}} 
+void {\bfseries get\+Weight\+Mutation\+Probability} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a562a94a8fbe32faf3b320c6ec4ea0109}\label{class_indie_neat_1_1_neat_engine_a562a94a8fbe32faf3b320c6ec4ea0109}} 
+double {\bfseries get\+Offsprings\+Rate} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_affaf6d625464486cdadc03acb63ef5ff}\label{class_indie_neat_1_1_neat_engine_affaf6d625464486cdadc03acb63ef5ff}} 
+double {\bfseries get\+Inter\+Species\+Mating\+Rate} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_ad0eff468394c3d6d676f24763592abcf}\label{class_indie_neat_1_1_neat_engine_ad0eff468394c3d6d676f24763592abcf}} 
+double {\bfseries get\+Species\+Keeping\+Rate} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a043fe1693e0eec6a96409991fd23082d}\label{class_indie_neat_1_1_neat_engine_a043fe1693e0eec6a96409991fd23082d}} 
+unsigned int {\bfseries get\+Default\+Species\+Pool\+Size} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a1d489dde2a8d01336f54d0863b295ebe}\label{class_indie_neat_1_1_neat_engine_a1d489dde2a8d01336f54d0863b295ebe}} 
+std\+::pair$<$ double, double $>$ const  \& {\bfseries get\+Default\+Weight\+Range} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a1e7b1007365ba9478934f288fc001bd7}\label{class_indie_neat_1_1_neat_engine_a1e7b1007365ba9478934f288fc001bd7}} 
+std\+::pair$<$ double, double $>$ const  \& {\bfseries get\+Default\+Perturbation\+Range} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a826d58f8d3ba3f2527545969b4817e0e}\label{class_indie_neat_1_1_neat_engine_a826d58f8d3ba3f2527545969b4817e0e}} 
+double {\bfseries get\+Expected\+Fitness} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_abbaa7a50a64d1b0a511242fd9b16397b}\label{class_indie_neat_1_1_neat_engine_abbaa7a50a64d1b0a511242fd9b16397b}} 
+unsigned int {\bfseries get\+Maximum\+Generation} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_ac52ab533bf06e49e6881d3f3be35f7ad}\label{class_indie_neat_1_1_neat_engine_ac52ab533bf06e49e6881d3f3be35f7ad}} 
+double {\bfseries get\+Random\+Weight\+Probability} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_ac9ad37b6bbad3b65c6cf925d01b7a45e}\label{class_indie_neat_1_1_neat_engine_ac9ad37b6bbad3b65c6cf925d01b7a45e}} 
+double {\bfseries get\+Add\+Connection\+Probability} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_af1fb8dbe2831bcde60a290d53a623dd7}\label{class_indie_neat_1_1_neat_engine_af1fb8dbe2831bcde60a290d53a623dd7}} 
+double {\bfseries get\+Add\+Neuron\+Probability} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_af04e63309d1fd3288a1858b2332353d6}\label{class_indie_neat_1_1_neat_engine_af04e63309d1fd3288a1858b2332353d6}} 
+double {\bfseries get\+Excess\+Coefficient} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a28823e1f447e4a4da95f623272f00be2}\label{class_indie_neat_1_1_neat_engine_a28823e1f447e4a4da95f623272f00be2}} 
+double {\bfseries get\+Disjoint\+Coefficient} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_af9199d878606632526eb7a6855bb3639}\label{class_indie_neat_1_1_neat_engine_af9199d878606632526eb7a6855bb3639}} 
+double {\bfseries get\+Weight\+Average\+Coefficient} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a44132cde1d44edd870780c05eba29ba1}\label{class_indie_neat_1_1_neat_engine_a44132cde1d44edd870780c05eba29ba1}} 
+bool {\bfseries is\+Evolving} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a72379a072d593db037c67badce123324}\label{class_indie_neat_1_1_neat_engine_a72379a072d593db037c67badce123324}} 
+bool {\bfseries is\+Finished} (void) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_aa806823e65622236d926d3787efa0b32}\label{class_indie_neat_1_1_neat_engine_aa806823e65622236d926d3787efa0b32}} 
+bool {\bfseries save} (std\+::string const \&directory) const
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_a7f866b4bd2279a1d3b89b450e45b6d6e}\label{class_indie_neat_1_1_neat_engine_a7f866b4bd2279a1d3b89b450e45b6d6e}} 
+bool {\bfseries load} (std\+::string const \&directory)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_af0bcb45cfa2e9576c5fbd58618267450}\label{class_indie_neat_1_1_neat_engine_af0bcb45cfa2e9576c5fbd58618267450}} 
+bool {\bfseries save\+Parameters} (void)
+\item 
+\mbox{\Hypertarget{class_indie_neat_1_1_neat_engine_ae44c81e06890ebce798f33c82bf6b2ee}\label{class_indie_neat_1_1_neat_engine_ae44c81e06890ebce798f33c82bf6b2ee}} 
+bool {\bfseries load\+Parameters} (void)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Neat\+Engine.\+hpp\end{DoxyCompactItemize}

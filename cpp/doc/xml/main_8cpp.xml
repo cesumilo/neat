@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="_neat_engine_8hpp" local="yes">NeatEngine.hpp</includes>
+    <includes refid="_phenotype_8hpp" local="yes">Phenotype.hpp</includes>
+    <incdepgraph>
+      <node id="61">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="73">
+        <label>list</label>
+      </node>
+      <node id="56">
+        <label>atomic</label>
+      </node>
+      <node id="64">
+        <label>Utils/ScopedLock.hh</label>
+      </node>
+      <node id="57">
+        <label>functional</label>
+      </node>
+      <node id="45">
+        <label>Mutator.hpp</label>
+        <link refid="_mutator_8hpp_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>MutationManager.hh</label>
+        <link refid="_mutation_manager_8hh_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>cmath</label>
+      </node>
+      <node id="67">
+        <label>string</label>
+      </node>
+      <node id="75">
+        <label>map</label>
+      </node>
+      <node id="72">
+        <label>Phenotype.hpp</label>
+        <link refid="_phenotype_8hpp_source"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>Backup.hpp</label>
+        <link refid="_backup_8hpp_source"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>exception</label>
+      </node>
+      <node id="69">
+        <label>fstream</label>
+      </node>
+      <node id="46">
+        <label>random</label>
+      </node>
+      <node id="44">
+        <label>NeatEngine.hpp</label>
+        <link refid="_neat_engine_8hpp_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>string.h</label>
+      </node>
+      <node id="58">
+        <label>ctime</label>
+      </node>
+      <node id="65">
+        <label>NeatEngineException.hh</label>
+        <link refid="_neat_engine_exception_8hh_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>vector</label>
+      </node>
+      <node id="43">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>utility</label>
+      </node>
+      <node id="70">
+        <label>array</label>
+      </node>
+      <node id="59">
+        <label>sstream</label>
+      </node>
+      <node id="53">
+        <label>iostream</label>
+      </node>
+      <node id="48">
+        <label>Genotype.hpp</label>
+        <link refid="_genotype_8hpp_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>Population.hpp</label>
+        <link refid="_population_8hpp_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>mutex</label>
+      </node>
+      <node id="55">
+        <label>thread</label>
+      </node>
+      <node id="52">
+        <label>Operator.hpp</label>
+        <link refid="_operator_8hpp_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>algorithm</label>
+      </node>
+      <node id="62">
+        <label>NeatPool.hpp</label>
+        <link refid="_neat_pool_8hpp_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a097c9a3977d9b32bfb849f00b449a1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void evaluate_genome</definition>
+        <argsstring>(IndieNeat::Population&lt; 2, 2 &gt;::GenomeContainer &amp;genome, std::vector&lt; IndieNeat::Population&lt; 2, 2 &gt;::GenomeScore *&gt; &amp;scores)</argsstring>
+        <name>evaluate_genome</name>
+        <param>
+          <type><ref refid="class_indie_neat_1_1_population" kindref="compound">IndieNeat::Population</ref>&lt; 2, 2 &gt;::GenomeContainer &amp;</type>
+          <declname>genome</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_indie_neat_1_1_population" kindref="compound">IndieNeat::Population</ref>&lt; 2, 2 &gt;::GenomeScore *&gt; &amp;</type>
+          <declname>scores</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="4" column="1" bodyfile="src/main.cpp" bodystart="4" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="29" column="1" bodyfile="src/main.cpp" bodystart="29" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;NeatEngine.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Phenotype.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>evaluate_genome(<ref refid="struct_indie_neat_1_1_population_1_1_genome_container" kindref="compound">IndieNeat::Population&lt;2, 2&gt;::GenomeContainer</ref>&amp;<sp/>genome,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<ref refid="struct_indie_neat_1_1_population_1_1_genome_score" kindref="compound">IndieNeat::Population&lt;2, 2&gt;::GenomeScore</ref><sp/>*&gt;&amp;<sp/>scores)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><ref refid="class_indie_neat_1_1_phenotype" kindref="compound">IndieNeat::Phenotype&lt;2, 2&gt;</ref><sp/><sp/><sp/><sp/>phenotype(*genome.genome);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputs;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputs1<sp/>=<sp/>{<sp/>0.0,<sp/>0.0<sp/>};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputs2<sp/>=<sp/>{<sp/>1.0,<sp/>0.0<sp/>};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputs3<sp/>=<sp/>{<sp/>0.0,<sp/>1.0<sp/>};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputs4<sp/>=<sp/>{<sp/>1.0,<sp/>1.0<sp/>};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><ref refid="struct_indie_neat_1_1_population_1_1_genome_score" kindref="compound">IndieNeat::Population&lt;2, 2&gt;::GenomeScore</ref><sp/><sp/>*scoreContainer;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>phenotype.init();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>outputs<sp/>=<sp/>phenotype.feedForward(inputs1);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>score<sp/>+=<sp/>(outputs[0]<sp/>-<sp/>outputs[1]<sp/>&lt;<sp/>0<sp/>?<sp/>0<sp/>:<sp/>outputs[0]<sp/>-<sp/>outputs[1]);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>outputs<sp/>=<sp/>phenotype.feedForward(inputs2);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>score<sp/>+=<sp/>(outputs[1]<sp/>-<sp/>outputs[0]<sp/>&lt;<sp/>0<sp/>?<sp/>0<sp/>:<sp/>outputs[1]<sp/>-<sp/>outputs[0]);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>outputs<sp/>=<sp/>phenotype.feedForward(inputs3);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>score<sp/>+=<sp/>(outputs[1]<sp/>-<sp/>outputs[0]<sp/>&lt;<sp/>0<sp/>?<sp/>0<sp/>:<sp/>outputs[1]<sp/>-<sp/>outputs[0]);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>outputs<sp/>=<sp/>phenotype.feedForward(inputs4);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>score<sp/>+=<sp/>(outputs[0]<sp/>-<sp/>outputs[1]<sp/>&lt;<sp/>0<sp/>?<sp/>0<sp/>:<sp/>outputs[0]<sp/>-<sp/>outputs[1]);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>scoreContainer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_indie_neat_1_1_population_1_1_genome_score" kindref="compound">IndieNeat::Population&lt;2, 2&gt;::GenomeScore</ref>(genome.idx,<sp/>score);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>scores.push_back(scoreContainer);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="class_indie_neat_1_1_neat_engine" kindref="compound">IndieNeat::NeatEngine&lt;2, 2&gt;</ref><sp/><sp/><sp/>engine;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>std::vector&lt;IndieNeat::Population&lt;2,<sp/>2&gt;::GenomeContainer<sp/>*&gt;<sp/><sp/><sp/>buffer;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>std::vector&lt;IndieNeat::Population&lt;2,<sp/>2&gt;::GenomeScore<sp/>*&gt;<sp/><sp/><sp/>scores;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>engine.setPopulationSize(150);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>engine.setMaximumGeneration(10);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>engine.setExpectedFitness(3.0);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>engine.setDefaultSpeciesPoolSize(200);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>engine.setOffspringsRate(0.75);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>engine.setSpeciesKeepingRate(0.8);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>engine.setInterSpeciesMatingRate(0.001);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>engine.setMaxStagnantGeneration(15);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>engine.setDefaultWeightRange(std::pair&lt;double,<sp/>double&gt;(-2,<sp/>2));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>engine.setDefaultPerturbationRange(std::pair&lt;double,<sp/>double&gt;(-5,<sp/>5));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>engine.setDistanceThreshold(0.2);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>engine.setExcessCoefficient(1);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>engine.setDisjointCoefficient(1);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>engine.setWeightAverageCoefficient(0.4);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>engine.setWeightMutationProbability(0.8);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>engine.setAddNeuronProbability(0.03);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>engine.setAddConnectionProbability(0.05);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>engine.setRandomWeightProbability(0.1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//engine.init();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!engine.load(</highlight><highlight class="stringliteral">&quot;saves/pop_Fri_Jun__3_20_03_07_2016&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!engine.isFinished())</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(engine.isEvolving())</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>engine.getPopulationSize()<sp/>&amp;&amp;<sp/>!engine.isFinished();<sp/>i++)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>genome<sp/>:<sp/>buffer)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>(genome);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buffer.clear();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>engine.evaluate(buffer,<sp/>1);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>evaluate_genome(*(buffer[0]),<sp/>scores);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>engine.pushScore(scores);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>scores.clear();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!engine.save(</highlight><highlight class="stringliteral">&quot;saves&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>cannot<sp/>save<sp/>the<sp/>population.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="class_indie_neat_1_1_genotype" kindref="compound">IndieNeat::Genotype&lt;2, 2&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*best<sp/>=<sp/>&amp;engine.getBestGenome();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Fitness:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>best-&gt;getFitness()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;It<sp/>works!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main.cpp"/>
+  </compounddef>
+</doxygen>

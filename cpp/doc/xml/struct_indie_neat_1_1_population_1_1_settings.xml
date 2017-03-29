@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_indie_neat_1_1_population_1_1_settings" kind="struct" language="C++" prot="public">
+    <compoundname>IndieNeat::Population::Settings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1a14aafe30a58b2689a13dd1d19500a18f" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::populationSize</definition>
+        <argsstring></argsstring>
+        <name>populationSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="122" column="1" bodyfile="src/Population.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1ae6c5b61c539cd4e5dc043f798aa65760" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::distanceThreshold</definition>
+        <argsstring></argsstring>
+        <name>distanceThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="123" column="1" bodyfile="src/Population.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1a1004cb5c55fde301f09f8bd74cdebc8c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::stagnantGenerationNumber</definition>
+        <argsstring></argsstring>
+        <name>stagnantGenerationNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="124" column="1" bodyfile="src/Population.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1ab524a3e59b527c2a3ed587e2e4a71c0e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::offspringsRate</definition>
+        <argsstring></argsstring>
+        <name>offspringsRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="125" column="1" bodyfile="src/Population.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1a5cd70811c28d92d8e7ca7abb1478dab4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::interSpeciesMatingRate</definition>
+        <argsstring></argsstring>
+        <name>interSpeciesMatingRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="126" column="1" bodyfile="src/Population.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1a2718afab60e531784caf63603165d24b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::speciesKeepingRate</definition>
+        <argsstring></argsstring>
+        <name>speciesKeepingRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="127" column="1" bodyfile="src/Population.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1ac23151beeabfcd56f270b8773aae8eae" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::defaultPoolSize</definition>
+        <argsstring></argsstring>
+        <name>defaultPoolSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="128" column="1" bodyfile="src/Population.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1a6b5240ac30a735d78ec28547515f0cde" prot="public" static="no" mutable="no">
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt;double, double&gt; IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::weightRange</definition>
+        <argsstring></argsstring>
+        <name>weightRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="129" column="1" bodyfile="src/Population.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1a99d7e84d07d5bc1b8c5974558cb7a22d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::expectedFitness</definition>
+        <argsstring></argsstring>
+        <name>expectedFitness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="130" column="1" bodyfile="src/Population.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_population_1_1_settings_1ad82badf3e35c9aaf91bd12a491a4e528" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::maxGeneration</definition>
+        <argsstring></argsstring>
+        <name>maxGeneration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="131" column="1" bodyfile="src/Population.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_indie_neat_1_1_population_1_1_settings_1af11d69390554dda748122686f83c3c22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::Settings</definition>
+        <argsstring>(void)</argsstring>
+        <name>Settings</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="81" column="1" bodyfile="src/Population.hpp" bodystart="81" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_population_1_1_settings_1ac2defa65f2152b868393d7a17e140f8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::Settings</definition>
+        <argsstring>(Settings const &amp;copy)</argsstring>
+        <name>Settings</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_population_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="89" column="1" bodyfile="src/Population.hpp" bodystart="89" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_population_1_1_settings_1a1f16d063671fdcca5ebf2910e4810da8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::~Settings</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Settings</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="102" column="1" bodyfile="src/Population.hpp" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_indie_neat_1_1_population_1_1_settings_1ad384b6f77208d8afd9bb360ee626e57a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_indie_neat_1_1_population_1_1_settings" kindref="compound">Settings</ref> &amp;</type>
+        <definition>Settings&amp; IndieNeat::Population&lt; numInputs, numOutputs &gt;::Settings::operator=</definition>
+        <argsstring>(Settings const &amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="struct_indie_neat_1_1_population_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Population.hpp" line="104" column="1" bodyfile="src/Population.hpp" bodystart="104" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Population.hpp" line="80" column="1" bodyfile="src/Population.hpp" bodystart="79" bodyend="132"/>
+    <listofallmembers>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1ac23151beeabfcd56f270b8773aae8eae" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>defaultPoolSize</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1ae6c5b61c539cd4e5dc043f798aa65760" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>distanceThreshold</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1a99d7e84d07d5bc1b8c5974558cb7a22d" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>expectedFitness</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1a5cd70811c28d92d8e7ca7abb1478dab4" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>interSpeciesMatingRate</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1ad82badf3e35c9aaf91bd12a491a4e528" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>maxGeneration</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1ab524a3e59b527c2a3ed587e2e4a71c0e" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>offspringsRate</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1ad384b6f77208d8afd9bb360ee626e57a" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>operator=</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1a14aafe30a58b2689a13dd1d19500a18f" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>populationSize</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1af11d69390554dda748122686f83c3c22" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>Settings</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1ac2defa65f2152b868393d7a17e140f8c" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>Settings</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1a2718afab60e531784caf63603165d24b" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>speciesKeepingRate</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1a1004cb5c55fde301f09f8bd74cdebc8c" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>stagnantGenerationNumber</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1a6b5240ac30a735d78ec28547515f0cde" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>weightRange</name></member>
+      <member refid="struct_indie_neat_1_1_population_1_1_settings_1a1f16d063671fdcca5ebf2910e4810da8" prot="public" virt="non-virtual"><scope>IndieNeat::Population::Settings</scope><name>~Settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

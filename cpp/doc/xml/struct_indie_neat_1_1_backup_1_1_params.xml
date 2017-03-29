@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_indie_neat_1_1_backup_1_1_params" kind="struct" language="C++" prot="public">
+    <compoundname>IndieNeat::Backup::Params</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1acbbb31260ac7ee6aa67c7b4ea5ece152" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::PopulationSize</definition>
+        <argsstring></argsstring>
+        <name>PopulationSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="30" column="1" bodyfile="src/Backup.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a58878b4923e2812f1679f1ad1fa3b6b6" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::MaxStagnantGeneration</definition>
+        <argsstring></argsstring>
+        <name>MaxStagnantGeneration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="31" column="1" bodyfile="src/Backup.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a87cbf2c1e1bdd474f6198893b9513493" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::DistanceThreshold</definition>
+        <argsstring></argsstring>
+        <name>DistanceThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="32" column="1" bodyfile="src/Backup.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a43b2e1fed098168ba66e9e495b20c8a4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::OffspringsRate</definition>
+        <argsstring></argsstring>
+        <name>OffspringsRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="33" column="1" bodyfile="src/Backup.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a6f31baa5e334ad02bc9f715a4b2571b3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::InterSpeciesMatingRate</definition>
+        <argsstring></argsstring>
+        <name>InterSpeciesMatingRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="34" column="1" bodyfile="src/Backup.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1ad2b4ade3e850705f933290403412529a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::SpeciesKeepingRate</definition>
+        <argsstring></argsstring>
+        <name>SpeciesKeepingRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="35" column="1" bodyfile="src/Backup.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a7a4f488dba9eee908013d641f0a51ee8" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::DefaultSpeciesPoolSize</definition>
+        <argsstring></argsstring>
+        <name>DefaultSpeciesPoolSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="36" column="1" bodyfile="src/Backup.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a67d9292ea9e640a5729fe5d631685089" prot="public" static="no" mutable="no">
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt;double, double&gt; IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::DefaultWeightRange</definition>
+        <argsstring></argsstring>
+        <name>DefaultWeightRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="37" column="1" bodyfile="src/Backup.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a1e6a5e73cbc492081f36b0896e9bf093" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::ExcessCoeficient</definition>
+        <argsstring></argsstring>
+        <name>ExcessCoeficient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="38" column="1" bodyfile="src/Backup.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a50e77dabfd18313b2586fe619824f8fe" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::DisjointCoeficient</definition>
+        <argsstring></argsstring>
+        <name>DisjointCoeficient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="39" column="1" bodyfile="src/Backup.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a8215ecb87dd748332639c916f21043c2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::WeightAverageCoeficient</definition>
+        <argsstring></argsstring>
+        <name>WeightAverageCoeficient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="40" column="1" bodyfile="src/Backup.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1adf6978ca30f0912f9edaeb84f5c24c0b" prot="public" static="no" mutable="no">
+        <type>std::pair&lt; double, double &gt;</type>
+        <definition>std::pair&lt;double, double&gt; IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::DefaultPerturbationRange</definition>
+        <argsstring></argsstring>
+        <name>DefaultPerturbationRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="41" column="1" bodyfile="src/Backup.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1ad0ef3e3b83aad87c007a1fee6953b5b8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::ExpectedFitness</definition>
+        <argsstring></argsstring>
+        <name>ExpectedFitness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="42" column="1" bodyfile="src/Backup.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1af96da1ac4c8da9d7899e92bfb67b6591" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::MaximumGeneration</definition>
+        <argsstring></argsstring>
+        <name>MaximumGeneration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="43" column="1" bodyfile="src/Backup.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a2a0881115e1ea4485bc2f4b5d9898174" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::AddNeuronProbability</definition>
+        <argsstring></argsstring>
+        <name>AddNeuronProbability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="44" column="1" bodyfile="src/Backup.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1ab0af28fee860496a83b56597dc4dac1d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::AddConnectionProbability</definition>
+        <argsstring></argsstring>
+        <name>AddConnectionProbability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="45" column="1" bodyfile="src/Backup.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_indie_neat_1_1_backup_1_1_params_1a93e861ef6f03ce10b529c377eb832ec5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double IndieNeat::Backup&lt; numInputs, numOutputs &gt;::Params::RandomWeightProbability</definition>
+        <argsstring></argsstring>
+        <name>RandomWeightProbability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Backup.hpp" line="46" column="1" bodyfile="src/Backup.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Backup.hpp" line="29" column="1" bodyfile="src/Backup.hpp" bodystart="28" bodyend="47"/>
+    <listofallmembers>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1ab0af28fee860496a83b56597dc4dac1d" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>AddConnectionProbability</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a2a0881115e1ea4485bc2f4b5d9898174" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>AddNeuronProbability</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1adf6978ca30f0912f9edaeb84f5c24c0b" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>DefaultPerturbationRange</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a7a4f488dba9eee908013d641f0a51ee8" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>DefaultSpeciesPoolSize</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a67d9292ea9e640a5729fe5d631685089" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>DefaultWeightRange</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a50e77dabfd18313b2586fe619824f8fe" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>DisjointCoeficient</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a87cbf2c1e1bdd474f6198893b9513493" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>DistanceThreshold</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a1e6a5e73cbc492081f36b0896e9bf093" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>ExcessCoeficient</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1ad0ef3e3b83aad87c007a1fee6953b5b8" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>ExpectedFitness</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a6f31baa5e334ad02bc9f715a4b2571b3" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>InterSpeciesMatingRate</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1af96da1ac4c8da9d7899e92bfb67b6591" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>MaximumGeneration</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a58878b4923e2812f1679f1ad1fa3b6b6" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>MaxStagnantGeneration</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a43b2e1fed098168ba66e9e495b20c8a4" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>OffspringsRate</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1acbbb31260ac7ee6aa67c7b4ea5ece152" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>PopulationSize</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a93e861ef6f03ce10b529c377eb832ec5" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>RandomWeightProbability</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1ad2b4ade3e850705f933290403412529a" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>SpeciesKeepingRate</name></member>
+      <member refid="struct_indie_neat_1_1_backup_1_1_params_1a8215ecb87dd748332639c916f21043c2" prot="public" virt="non-virtual"><scope>IndieNeat::Backup::Params</scope><name>WeightAverageCoeficient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

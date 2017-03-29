@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_indie_neat_1_1_mutation_manager" kind="class" language="C++" prot="public">
+    <compoundname>IndieNeat::MutationManager</compoundname>
+    <innerclass refid="struct_indie_neat_1_1_mutation_manager_1_1_mutation" prot="public">IndieNeat::MutationManager::Mutation</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_indie_neat_1_1_mutation_manager_1a71b9dfa0dd420edd288b446b003dda57" prot="public" static="no">
+        <name>MutationType</name>
+        <enumvalue id="class_indie_neat_1_1_mutation_manager_1a71b9dfa0dd420edd288b446b003dda57a8e22cbfe24233d07fd234c17b146d6d0" prot="public">
+          <name>ADD_CONNECTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_indie_neat_1_1_mutation_manager_1a71b9dfa0dd420edd288b446b003dda57ab5503b0c516fa1a6c930557f3ea5aa22" prot="public">
+          <name>ADD_NODE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MutationManager.hh" line="12" column="1" bodyfile="src/MutationManager.hh" bodystart="11" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_indie_neat_1_1_mutation_manager_1aa4f3cf233191bc9bf1be90ff2e9d8642" prot="private" static="yes" mutable="no">
+        <type>long long</type>
+        <definition>long long IndieNeat::MutationManager::_innov</definition>
+        <argsstring></argsstring>
+        <name>_innov</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MutationManager.hh" line="31" column="1" bodyfile="src/MutationManager.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_indie_neat_1_1_mutation_manager_1a30e2e085a8637858f68b525f28e5fcda" prot="private" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_indie_neat_1_1_mutation_manager_1_1_mutation" kindref="compound">Mutation</ref> * &gt;</type>
+        <definition>std::vector&lt; MutationManager::Mutation * &gt; IndieNeat::MutationManager::_mutations</definition>
+        <argsstring></argsstring>
+        <name>_mutations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MutationManager.hh" line="32" column="1" bodyfile="src/MutationManager.hh" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_indie_neat_1_1_mutation_manager_1af803ebcafc0ca8ea4c485215e5448158" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IndieNeat::MutationManager::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MutationManager.hh" line="26" column="1" bodyfile="src/MutationManager.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_indie_neat_1_1_mutation_manager_1abfa9bd8fcf8c45e8daab19597091eb9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long long</type>
+        <definition>long long IndieNeat::MutationManager::GetInnovationNumber</definition>
+        <argsstring>(unsigned int input, unsigned int output, MutationType type)</argsstring>
+        <name>GetInnovationNumber</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>MutationType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MutationManager.hh" line="27" column="1" bodyfile="src/MutationManager.cpp" bodystart="16" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/MutationManager.hh" line="9" column="1" bodyfile="src/MutationManager.hh" bodystart="8" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_indie_neat_1_1_mutation_manager_1aa4f3cf233191bc9bf1be90ff2e9d8642" prot="private" virt="non-virtual"><scope>IndieNeat::MutationManager</scope><name>_innov</name></member>
+      <member refid="class_indie_neat_1_1_mutation_manager_1a30e2e085a8637858f68b525f28e5fcda" prot="private" virt="non-virtual"><scope>IndieNeat::MutationManager</scope><name>_mutations</name></member>
+      <member refid="class_indie_neat_1_1_mutation_manager_1af803ebcafc0ca8ea4c485215e5448158" prot="public" virt="non-virtual"><scope>IndieNeat::MutationManager</scope><name>Clear</name></member>
+      <member refid="class_indie_neat_1_1_mutation_manager_1abfa9bd8fcf8c45e8daab19597091eb9c" prot="public" virt="non-virtual"><scope>IndieNeat::MutationManager</scope><name>GetInnovationNumber</name></member>
+      <member refid="class_indie_neat_1_1_mutation_manager_1a71b9dfa0dd420edd288b446b003dda57" prot="public" virt="non-virtual"><scope>IndieNeat::MutationManager</scope><name>MutationType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
